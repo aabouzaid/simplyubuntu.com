@@ -1,0 +1,2409 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+  <head>
+
+	<b:include data='blog' name='all-head-content'/>
+	<b:if cond='data:blog.url == data:blog.homepageUrl'>
+	<title><data:blog.title/></title>
+	<meta content='الموقع الرسمي لكتاب &quot;أوبنتو ببساطة&quot; ابدأ مع نظام أوبنتو لينُكس الآن‏‫! تعلم استخدام نظام التشغيل أوبنتو (أوبونتو) لينُكس (لينوكس) الرائع بطريقة بسيطة وسهلة - لمؤلفه أحمد م. أبوزيد The official website of &quot;Simply Ubuntu&quot; book - Start with Ubuntu Linux OS now! Learn how to use Ubuntu Linux operating system in a simple and easy way Author: Ahmed M. AbouZaid' name='Description'/>
+	<meta content='http://i.imgur.com/7vhcfcY.png' property='og:image'/>
+	<b:else/>
+	<b:if cond='data:blog.pageType == &quot;archive&quot;'>
+	<title><data:blog.title/> &#187; <data:blog.pageName/></title>
+	<b:else/>
+	<b:if cond='data:blog.pageType == &quot;item&quot;'>
+	<title>&#8235;<data:blog.pageName/>&#8236;</title>
+	<b:else/>
+	<b:if cond='data:blog.pageType == &quot;static_page&quot;'>
+	<title>&#8235;<data:blog.pageName/>&#8236;</title>
+	<b:else/>
+	<title>&#8235;<data:blog.title/> &#187; <data:blog.pageName/>&#8236;</title>
+	</b:if>
+	</b:if>
+	</b:if>
+	</b:if>
+
+	
+<b:skin><![CDATA[/*
+*******************************************************************
+Template Details :-
+Name	:	The Simple!
+By		:	Ahmed M. AbouZaid
+URL		:	http://www.aabouzaid.com/
+Based on	:	Neoo Template
+By		:	http://almsn3.blogspot.com/
+License	:	CC: BY-NC-SA 3.0
+URL		:	http://creativecommons.org/licenses/by-nc-sa/3.0/
+*******************************************************************
+*/
+/* --- START ----[STYLE BY ALMSN3.BLOGSPOT.COM ]--- */
+/* [RESET HTML TAG]
+--------------------------------------------------------------------------------------------------------------- */
+html, body, form, input, iframe, h1, h2, h3, h4, h5, h6, p, pre, blockquote, ul, ol, dl, abbr { margin:0; padding:0; border:0; outline: 0; }
+input:focus { outline: none; }
+:focus { -moz-outline-style:none; }
+::-moz-focus-inner { padding:0;border:0; }
+body                   { font-family: Arial, KacstOne, Tahoma, sans-serif; font-weight: normal;background: #FFFFFF; color:#222222; }
+a                      { color:#b90707; text-decoration:none; outline: 0; }
+a:hover                { color:#B40000; }
+a:active               { outline: 0; position: relative; top: 1px; }
+h1, h2, h3, h4, h5, h6 { font-family: Arial, KacstOne, 'KFGQPC Uthman Taha Naskh', sans-serif; line-height:1; text-align:right; font-weight:bold; }
+h1                     { font-size:28px; }
+h2                     { font-size:24px; }
+h3                     { font-size:22px; }
+h4                     { font-size:18px; }
+h5                     { font-size:16px; }h6 { font-size:14px; }
+ul, li                 { list-style-type:none; list-style:none; }
+img, a img             { -ms-interpolation-mode:bicubic; border:none; }
+em                     { border-bottom:1px solid #DFDFDF; background:#FFFFB1; font-style:normal;color:#333; }
+::selection            { background: #FDC689; color: #363636; }
+::-moz-selection       { background: #FDC689; color: #363636; }
+/* [Share Box]
+--------------------------------------------------------------------------------------------------------------- */
+#sharebox {border:none;
+text-align: center;
+background: url(http://i.imgur.com/b50MA.png) no-repeat;
+background-position:center;
+height: 105px;
+text-decoration: none;
+}
+#sharebox ul{ list-style-type:none;
+margin-right: 210px;
+border:none;
+}
+#sharebox ul li{ float:right;
+margin-top:5px;
+margin-left:55px;
+background-image:url() ;
+border:none;
+}
+#sharebox ul li{ float:right;
+margin-top:11px;
+margin-left:55px;
+background-image:url() ;
+border:none;
+}
+/*#sharebox ul li a:hover{opacity :.8
+border:none;
+}*/
+.goodreads a{background-image:url(https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/sharebox/goodreads_share.png) ;
+width:65px;
+height:82px; display:block;}
+.goodreads a:hover{ background-image:url(https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/sharebox/goodreads_share.png) ;
+width:65px;
+height:82px; display:block;}
+.facebook a{background-image:url(https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/sharebox/facebook_share.png) ;
+width:65px;
+height:82px; display:block;}
+.facebook a:hover{ background-image:url(https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/sharebox/facebook_share.png) ;
+width:65px;
+height:82px; display:block;}
+.twitter a{background-image:url(https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/sharebox/twitter_share.png) ;
+width:65px;
+height:82px; display:block;}
+.twitter a:hover{ background-image:url(https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/sharebox/twitter_share.png) ;
+width:65px;
+height:82px; display:block;}
+.google a{background-image:url(https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/sharebox/googleplus_share.png) ;
+width:65px;
+height:82px; display:block;}
+.google a:hover{ background-image:url(https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/sharebox/googleplus_share.png) ;
+width:65px;
+height:82px; display:block;}
+/* [BLOGGER ELEMENT]
+--------------------------------------------------------------------------------------------------------------- */
+#navbar, #navbar-iframe, span.widget-item-control, #creditfooter, #top h2, #footer h2 { display:none!important; height:0!important; visibility:hidden!important; }
+/* [PAGE ELEMENTS]
+--------------------------------------------------------------------------------------------------------------- */
+#nav2-wrapper {
+background: #FFFFFF;
+position: relative;
+width: 850px;
+margin:0 auto;
+padding-top: 190px;
+}
+#content-wrapper {
+position: relative;	background: #FFFFFF;
+margin:0 auto;
+padding: 0px 0 0px 0;
+width: 850px;
+}
+#content {
+background: #FFFFFF;
+margin: 0px 15px 0px 0px;
+padding: 10px 5px 0px 0px;
+position: relative;
+overflow:auto;
+width: 96%;
+}
+#content-area {
+padding: 20px 0px 0px 0;
+width: 460px;
+float: right;
+}
+#content-area2 {
+padding: 25px 0px 0px 0;
+width: 460px;
+float: right;
+font-family: Arial, KacstOne, Tahoma, sans-serif;
+}
+#content-area2 h2 {
+padding: 25px 0px 0px 0;
+width: 460px;
+float: right;
+font-family: Arial, KacstOne, Tahoma, sans-serif;
+}
+#content-area3 {
+width: 850px;
+clear:both;
+position: relative;
+margin:0 auto;
+font-size:12px;
+line-height: 1.6;
+padding-top: 30px;
+padding-bottom:0px;
+font-family: Arial, KacstOne, Tahoma, sans-serif;
+}
+#sidebar {
+position: relative;
+padding-top: 20px;
+overflow: visible;
+width: 300px;
+float: left;
+font-family: Arial, KacstOne, Tahoma, sans-serif;
+font-weight: normal;
+}
+/* [TOP-HEAD -HEADER-]
+--------------------------------------------------------------------------------------------------------------- */
+#head-wrapper { background: #FFF url(https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/colors.gif) repeat-x 0px top;min-width: 760px; height: 4px; color:#828282; width:100%; }
+#head-wrapper:hover { color:#999; }
+#head-wrapper #head { position:relative; margin:0 auto; width:845px; z-index:3; }
+#head-wrapper #head #header { padding:15px 0 15px 0; }
+#head-wrapper #head #header div.title { font-size:36px; line-height:1; font-weight: bold; }
+#head-wrapper #head #header p.description { -webkit-text-shadow: #FFFFFF 0 1px 0px; text-shadow: #1D1D1D 0 1px 0px; padding: 0px 0 10px 0; font-size:12px; }
+/* [Logo]
+--------------------------------------------------------------------------------------------------------------- */
+#logo_img {
+float: right;
+margin: 40px 10px 20px 0px ;
+}
+/* [codebox]
+--------------------------------------------------------------------------------------------------------------- */
+div.codebox {
+border: 1px dotted #ccc;
+direction:ltr;
+text-align:left;
+background:#fff;
+padding:10px;
+height:80px;
+width:530px;
+overflow: auto;
+}
+div.bigcodebox {
+border: 1px dotted #ccc;
+direction:ltr;
+clear:both;
+position: relative;
+margin:0 auto;
+text-align:left;
+background:#fff;
+padding:10px;
+height:80px;
+width:700px;
+overflow: auto;
+}
+/* [New NAVIGATION MENU]
+--------------------------------------------------------------------------------------------------------------- */
+#nav2 {
+background: url(https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/nav2_clear_850x68.png) no-repeat ;
+height: 35px;
+border-top:1px dotted #ccc;
+border-bottom:1px dotted #ccc;
+}
+#nav2 span {
+display: none;
+}
+#nav2 li {
+list-style-type: none;
+float: left;
+}
+#nav2 a {
+height: 35px;
+display: block;
+}
+#list1 { width: 134px; }
+#list2 { width: 133px; }
+#list3 { width: 134px; }
+#list4 { width: 133px; }
+#list5 { width: 133px; }
+#list6 { width: 133px; }
+#list7 { width: 50px; }
+list1 :after  { content:"انشر الكتاب"; }
+list2 :after { content:"نسخة ورقية"; }
+list3 :after { content:"آراء القراء"; }
+list4 :after { content:"إقرأه الآن"; }
+list5 :after { content:"عن الكتاب"; }
+list6 :after { content:"إعرف أوبنتو"; }
+list7 :after { content:" الرئيسية"; }
+#list1 a:hover {
+background: url(https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/nav2_clear_850x68.png) 0px -34px no-repeat;
+}
+#list2 a:hover {
+background: url(https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/nav2_clear_850x68.png) -134px -34px no-repeat;
+}
+#list3 a:hover {
+background: url(https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/nav2_clear_850x68.png) -267px -34px no-repeat;
+}
+#list4 a:hover {
+background: url(https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/nav2_clear_850x68.png) -401px -34px no-repeat;
+}
+#list5 a:hover {
+background: url(https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/nav2_clear_850x68.png) -534px -34px no-repeat;
+}
+#list6 a:hover {
+background: url(https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/nav2_clear_850x68.png) -667px -34px no-repeat;
+}
+#list7 a:hover {
+background: url(https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/nav2_clear_850x68.png) -800px 0px no-repeat;
+}
+/* [NAVIGATION MENU]
+--------------------------------------------------------------------------------------------------------------- */
+ul#navmenu {
+float: left;
+list-style: none;
+height: 36px;
+margin: 100px 0 0 -35px ;
+padding-left: 36px;
+background: #FFFFFF;
+font-family: Arial, KacstOne, Tahoma, sans-serif;
+}
+ul#navmenu ul {
+position: absolute;
+list-style: none;
+z-index: 1000;
+display: none;
+width: 400px; /* عرض القائمة الفرعية */
+padding: 0;
+margin: 0;
+top: 32px;
+right: 0;
+}
+ul#navmenu ul ul, ul#navmenu ul ul ul {
+position: absolute;
+right: 100%;
+top: 0;
+}
+ul#navmenu li {
+margin: 0 0 0 5px;
+position: relative;
+display: inline;
+float: right;
+}
+ul#navmenu li.iehover {
+z-index: 1000;
+}
+ul#navmenu ul li {
+display: block;
+width: 100%;
+}
+/* ---- ROOT  -------------------------- */
+ul#navmenu a {
+background: url() no-repeat 100% -96px; background-color:#FFFFFF;
+font: bold 18px Arial, 'KFGQPC Uthman Taha Naskh', sans-serif;
+text-decoration: none;
+padding: 0 7px 0 0; line-height:35px;
+float: left; /*IE*/
+display: block;
+color: #000000;
+height: auto !important;
+cursor: pointer;
+height: 1%; /*IE*/
+font-family: Arial, KacstOne, Tahoma, sans-serif;
+}
+ul#navmenu ul a:active { top: auto; }
+ul#navmenu a span {
+background: url() no-repeat 0 -96px;
+float: left;
+display: block;
+margin-top: -0px;
+padding-left: 7px;
+height:32px;
+}
+/* ---- ROOT:Hover  -------------------- */
+ul#navmenu a:hover,ul#navmenu li:hover a,ul#navmenu li.iehover a {
+url() no-repeat 100% -128px;
+color: #B90707;
+}
+ul#navmenu a:hover span,ul#navmenu li:hover a span,ul#navmenu li.iehover a span {  url() no-repeat 0 -128px; }
+/* ---- ROOT.ArrowDown  ---------------- */
+ul#navmenu a.popup_down { background: #343434 url(http://lh5.ggpht.com/_dInhsEHH_98/S9XNkTSqwTI/AAAAAAAAACc/5atbIzSbHrw/s00/nav-search.gif) no-repeat 100% -160px; }
+ul#navmenu a.popup_down span {
+background: #343434 url(http://lh5.ggpht.com/_dInhsEHH_98/S9XNkTSqwTI/AAAAAAAAACc/5atbIzSbHrw/s00/nav-search.gif) no-repeat 0 -160px;
+padding-left: 24px;
+}
+/* ---- ROOT.ArrowDown:Hover  ---------- */
+ul#navmenu a.popup_down:hover,ul#navmenu li:hover a.popup_down,ul#navmenu li.iehover a.popup_down {
+background: #B90707 url(http://lh5.ggpht.com/_dInhsEHH_98/S9XNkTSqwTI/AAAAAAAAACc/5atbIzSbHrw/s00/nav-search.gif) no-repeat 100% -192px;
+}
+ul#navmenu a.popup_down:hover span,ul#navmenu li:hover a.popup_down span,ul#navmenu li.iehover a.popup_down span {
+background: #B90707 url(http://lh5.ggpht.com/_dInhsEHH_98/S9XNkTSqwTI/AAAAAAAAACc/5atbIzSbHrw/s00/nav-search.gif) no-repeat 0 -192px;
+padding-left: 24px;
+}
+/* Mail Button */
+ul#navmenu a.mail { background: #FFFFFF url(https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/navicons.png) no-repeat -12px -8px; padding-right:18px; }
+ul#navmenu a.mail span { text-indent:-5000px; overflow:hidden; }
+ul#navmenu a.mail:hover { background: #ffffff url(https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/navicons.png) no-repeat -12px -49px; }
+ul#navmenu a.mail:hover span { background-position: -0px -0px; }
+/* Search Button */
+ul#navmenu a.search { background: #FFFFFF url(https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/navicons.png) no-repeat -12px -300px; padding-right:18px; }
+ul#navmenu a.search span { text-indent:-5000px; overflow:hidden; }
+ul#navmenu a.search:hover { background: #ffffff url(https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/navicons.png) no-repeat -12px -344px; }
+ul#navmenu a.search:hover span { background-position: -0px -0px; }
+/* Rss Button */
+ul#navmenu a.rss { background: #FFFFFF url(https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/navicons.png) no-repeat -12px -100px; padding-right:18px; }
+ul#navmenu a.rss span { text-indent:-5000px; overflow:hidden; }
+ul#navmenu a.rss:hover { background: #ffffff url(https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/navicons.png) no-repeat -12px -150px; }
+/* Twitter Button */
+ul#navmenu a.twitter { background: #FFFFFF url(https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/navicons.png) no-repeat -12px -200px; padding-right:18px; }
+ul#navmenu a.twitter span { text-indent:-5000px; overflow:hidden; }
+ul#navmenu a.twitter:hover { background: #ffffff url(https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/navicons.png) no-repeat -12px -250px; }
+/* [SEARCH BOX]
+--------------------------------------------------------------------------------------------------------------- */
+li#searchform-l {float:left!important; width:260px;}
+input#livesearch2 {
+background: #FFF url(http://lh5.ggpht.com/_dInhsEHH_98/S9XNkTSqwTI/AAAAAAAAACc/5atbIzSbHrw/s00/nav-search.gif) no-repeat 100% -256px;
+font: bold 16px Arial, sans-serif;
+padding: 3px 25px 4px 0;
+border: none;
+width: 189px;
+float:right;
+color: #C0C0C0;
+margin:0;
+height:25px;
+}
+input#livesearch2:hover, input#livesearch2:focus {
+background-position: 100% -288px;
+color: #7D7D7D;
+}
+input.button {
+background: #B90707 url(http://lh5.ggpht.com/_dInhsEHH_98/S9XNkTSqwTI/AAAAAAAAACc/5atbIzSbHrw/s00/nav-search.gif) no-repeat 0 -256px;
+width:46px;
+height:32px;
+border: none;
+overflow: hidden;
+text-indent: -999px;
+line-height: 30px;
+display: block;
+color: #a63606;
+float:right;
+cursor: pointer;
+}
+input.button::-moz-focus-inner{
+padding:0;
+border:0;
+}
+input.button:hover, input#button:focus {
+background-position: 0 -288px;
+background-color:#218FBF;
+}
+input.button:active {
+background-position: 0 -320px !important;
+}
+/* [TOP ANNUNCIATION]
+--------------------------------------------------------------------------------------------------------------- */
+#top-wrapper {
+background: #FFCCCC;
+min-width: 830px;
+height: 40px;
+width:100%;
+}
+#top-wrapper a { color:#B40000; }
+#top-wrapper a:hover { color:#222; }
+#top-wrapper #top { position:relative; margin:0 auto; width:830px;}
+#top-wrapper #top .widget-content .top-inner { font-size:15px; padding:15px 0 15px 0; }
+#top-wrapper #top .widget-content .top-inner.hide { display:none; }
+#top-wrapper #top .widget-content .top-inner.icon {
+background: url(http://lh5.ggpht.com/_dInhsEHH_98/S9xjVmR-0cI/AAAAAAAAAGE/oj1bUaGPWfo/s00/warning.png) no-repeat 100% center;
+padding-right: 47px;
+}
+#top-wrapper #top .widget { width:100%; overflow:hidden; }
+#top-wrapper #top p { font-size:13px; }
+/* [STATUS MSG]
+--------------------------------------------------------------------------------------------------------------- */
+.status-msg
+.status-msg a
+.status-msg a:hover
+/* [POSTS]
+--------------------------------------------------------------------------------------------------------------- */
+.index-post, #single-post {
+border:1px solid #FFF;
+padding: 15px 0px 0px 15px;
+margin-bottom:20px;
+position:relative;
+background: #FFF;
+width:460px;
+font-size:26px;
+}
+#static-page {
+border:1px solid #FFF;
+padding: 15px 0px 0px 15px;
+margin:0 auto;
+position:relative;
+background: #FFF;
+width:770px;
+font-size:26px;
+}
+#static-page a { color:#b90707; text-decoration:none; outline: 0;
+}
+/* MINIPOST */
+.minipost {
+background: #FFF6C7 url(http://lh4.ggpht.com/_tb7UW2nr6KA/TNK_ohZXRVI/AAAAAAAAAMo/lh7DoVFfoCI/minipost3.png) no-repeat 100% 2px;
+padding: 15px 115px 15px 15px;
+border:1px solid #FFF6C7;
+margin-bottom:20px;
+margin-right:10px;
+position:relative;
+width:468px;
+}
+.minipost .entry {
+-webkit-text-shadow: #FFFBD8 0 1px 0px;
+text-shadow: #FFFBD8 0 1px 0px;
+text-align:justify;
+font-family: 18px/1.2 Arial, KacstOne, sans-serif;
+color: #515151;
+}
+.minipost .entry a { color:#B40000; }
+.minipost .entry a:hover { border-bottom: 0.5px dotted #B40000;  }
+.minipost .entry, .minipost .entry p { margin-bottom: 15px; }
+.minipost p.meta {
+margin:-10px 0 0;
+font-weight:normal;
+font-size: 12px;
+color:#B9B197;
+}
+.minipost p.meta a { color:#B9B197;}
+.minipost p.meta a:hover { color:#807970;}
+/* [SHARE Buttons]
+--------------------------------------------------------------------------------------------------------------- */
+div.post-share-buttons{
+overflow:auto;
+width:100%;
+clear:both;
+}
+/* [POST LABELS]
+--------------------------------------------------------------------------------------------------------------- */
+div.labels-post{
+display:block;
+overflow:auto;
+width:100%;
+clear:both;
+margin: 0px 0px 0px 0px;
+text-decoration:none
+}
+div.labels-post span.comma { display:none; }
+.labels-post a {
+text-transform: lowercase;
+padding:1px 13px 0px 2px;
+text-decoration: none;
+margin: 0px 0px 0px 3px;
+position:relative;
+font-weight:bold;
+line-height:16px;
+font-size:12px;
+color:#B40000;
+display:block;
+float:right;
+}
+.labels-post a span {
+position:absolute;
+height:20px;
+left:-9px;
+width:9px;
+top:0px;
+}
+.labels-post a:hover {
+color:#B40000;
+text-decoration:none
+}
+.labels-post a:active {
+position: relative;
+right:2px;
+top: 0px;
+}
+.labels-post a:hover span
+.labels-post a.last {
+color:#B40000;
+}
+.labels-post a.last span {
+cursor:pointer;
+}
+.labels-post a.last:hover {
+color:#B40000;
+text-decoration:none
+}
+.labels-post a.last:hover span {
+color:#B40000;
+text-decoration:none
+}
+.labels-post a.last:active {
+color:#B40000;
+}
+.labels-post a.last:active span
+/* [POST TITLE]
+--------------------------------------------------------------------------------------------------------------- */
+h1.post-title, h2.post-title {
+background: url(http://lh3.ggpht.com/_tb7UW2nr6KA/TNK8zfxDzQI/AAAAAAAAAMQ/Kl_9GtJ2ag8/s144/linez.png) no-repeat 0 22px;
+margin: 3px 0px 4px;
+color: #2A2A2A;
+font-size:26px;
+}
+h2.post-title a, h1.post-title a { color: #2A2A2A; }
+h2.post-title a:active, h2.post-title a:focus,h1.post-title a:active, h1.post-title a:focus { color:#C33; }
+/* [POST META]
+--------------------------------------------------------------------------------------------------------------- */
+.metapost {
+padding: 5px 0px 0px 0px;
+margin-top:-5px;
+color:#BABABA;
+height:12px;
+width:100%;
+font-size: 12px;
+}
+.metapost span {
+display:block;
+float: right;
+}
+.metapost a { color:#646464;}
+.metapost a:hover { color:#4A4A4A; }
+.metapost .timestamp {
+background: url(http://lh6.ggpht.com/_dInhsEHH_98/S9xqQf5IK3I/AAAAAAAAAGQ/Er7fEi100KI/s00/icons.png) no-repeat right 2px;
+padding-right: 20px;
+}
+.metapost .timestamp a:hover { cursor: help; }
+.metapost .author {}
+.metapost .comments {
+background: url(http://lh6.ggpht.com/_dInhsEHH_98/S9xqQf5IK3I/AAAAAAAAAGQ/Er7fEi100KI/s00/icons.png) no-repeat right -25px;
+padding-right: 20px;
+font-weight:bold;
+float:left;
+}
+.metapost .backlinks {
+font-weight:bold;
+float:left;
+}
+/* [POST ENTRY]
+--------------------------------------------------------------------------------------------------------------- */
+.post-body-n3{
+padding-top:30px;
+background: #FFFFFF url(http://files.simplyubuntu.com/images/line.png) no-repeat 40% 0;
+text-align:justify;
+line-height: 1.3;
+font-size: 16px;
+font-family: Arial, KacstOne;
+}
+.post-body-n3 a {
+}
+.post-body-n3 a:hover { border-bottom: 0.5px dotted #B40000;}
+.post-body-n3 a:focus, .post-body-n3 a:active { background-color:#FFF0F0;color:#C00; }
+.post-body-n3 p { margin-bottom: 15px; }
+.post-body-n3 ul, .post-body-n3 ol {
+border-bottom:1px dashed #EEE;
+margin-bottom: 15px;
+clear:both;
+}
+.post-body-n3 ul li {
+background:url(http://lh6.ggpht.com/_dInhsEHH_98/S9xqQf5IK3I/AAAAAAAAAGQ/Er7fEi100KI/s00/icons.png) no-repeat right -714px;
+border-top:1px dashed #EEE;
+padding: 2px 20px 3px 0;
+line-height: 22px;
+}
+.post-body-n3 ol li {
+border-top:1px dashed #EEE;
+list-style-position:inside;
+list-style-type:decimal;
+line-height: 22px;
+padding: 2px 0;
+}
+.post-body-n3 h1, .post-body-n3 h2, .post-body-n3 h3, .post-body-n3 h4, .post-body-n3 h5, .post-body-n3 h6 {
+margin-bottom:10px;
+color:#C33;
+}
+/* READ MORE */
+.post-body-n3 .fullarticle {
+background:url(http://files.simplyubuntu.com/images/line.png) no-repeat 0% 70%;
+text-align:left;
+}
+.post-body-n3 .fullarticle a, .post-body-n3 .editpost a {
+border-bottom-width:0;
+padding:0px;
+font-family: bold 18px Arial, KacstOne, sans-serif;
+}
+/* [IMAGES]
+--------------------------------------------------------------------------------------------------------------- */
+.post-body-n3 img.centered {
+padding: 8px;
+}
+img {
+background:none;
+border:none;
+padding:0;
+}
+.post-body-n3 img.centered { margin: 0 auto; display:block; }
+.post-body-n3 img.alignright { margin:2px 0 0px 11px; float:right; }
+.post-body-n3 img.alignleft { margin:2px 11px 0px 0; float:left;  }
+.post-body-n3 a img {
+}
+.post-body-n3 a:hover img { }
+/* [BLOCKQUOTE]
+--------------------------------------------------------------------------------------------------------------- */
+blockquote {
+border-bottom: 2px solid #EEE;
+padding:10px 55px 0px 15px;
+margin-bottom: 15px;
+position:relative;
+background:#f4f5f7 url(http://lh6.ggpht.com/_dInhsEHH_98/S9xqQf5IK3I/AAAAAAAAAGQ/Er7fEi100KI/s00/icons.png) no-repeat 525px -659px;
+color:#7D7D7D;
+clear:both;
+}
+blockquote p {
+margin-bottom:10px !important;
+}
+/* [TABLE]
+--------------------------------------------------------------------------------------------------------------- */
+table.cooltable, table.cooltable1 { margin-bottom:15px; }
+table.cooltable1                { background-color: #EAF4F4; }
+table.cooltable, table.cooltable td, table.cooltable1, table.cooltable1 td {  border: 0 none; }
+table.cooltable1 thead td       { font-size:15px; background-color: #4E4E4E; color: #FFF; }
+table.cooltable1 .alt1 em, table.cooltable1 .alt2 em { font-weight: bold; background:none;color: #C30; }
+table.cooltable1 .alt1          { background-color: #FAFFFF; }
+table.cooltable1 .alt2          { background-color: #F1F9F9; }
+/* [BLOG PAGER]
+--------------------------------------------------------------------------------------------------------------- */
+#blog-pager { margin:0 0 20px 0 !important; }
+.blog-pager {
+padding: 0 10px;
+height: 26px;
+width:500px;
+}
+.blog-pager span a {
+padding:4px 16px 6px 0px;
+text-decoration: none;
+margin:0 0 4px 4px;
+position:relative;
+color: #222222;
+display:block;
+float:left;
+font: bold 18px/16px Arial, KacstOne, sans-serif;
+}
+.blog-pager span a span {
+position:absolute;
+height:26px;
+left:-12px;
+width:12px;
+top:0px;
+}
+.blog-pager span a:hover {color:#b90707; }
+.blog-pager span a:hover span
+.blog-pager span#blog-pager-older-link a:active { position: relative; top: 0px; right:2px;}
+.blog-pager span#blog-pager-newer-link a:active { position: relative; top: 0px; left:2px; }
+/* blog-pager-newer */
+.blog-pager span#blog-pager-newer-link a {
+padding:4px 0px 6px 16px;
+margin:0 4px 4px 0;
+}
+.blog-pager span#blog-pager-newer-link a span {
+position:absolute;
+right:-12px;
+height:26px;
+width:12px;
+top:0px;
+}
+.blog-pager span#blog-pager-newer-link a:hover { !important; }
+.blog-pager span#blog-pager-newer-link a:hover span
+/* blog-pager-older */
+.blog-pager span#blog-pager-older-link a {
+padding:4px 0px 6px 16px;
+margin:0 4px 4px 0;
+}
+.blog-pager span#blog-pager-older-link a span {
+position:absolute;
+right:-12px;
+height:26px;
+width:12px;
+top:0px;
+}
+.blog-pager span#blog-pager-older-link a:hover { !important; }
+.blog-pager span#blog-pager-older-link a:hover span
+/* [COMMENTS]
+--------------------------------------------------------------------------------------------------------------- */
+#comments {
+margin-top:15px;
+margin:0 auto;
+width:520px;
+font-family: Arial, KacstOne, Tahoma, sans-serif;
+font-weight: normal;
+}
+#comments h4 { color:#7D7D7D; }
+#comments h4.numcomments, #comments h4.comment-post-message {
+border-bottom: 2px solid #D0D0D0;
+padding: 8px 15px 6px;
+background-color:#FFF;
+}
+#comments h4.numcomments span.numcomments { color: #AF2B2B; }
+#comments h4.numcomments span.bracket {
+font: bold 22px Arial, KacstOne, Georgia, 'Times New Roman', Times, serif;
+color: #CACACA;
+}
+dl#comments-block {
+padding:0;
+margin:0;
+}
+dl#comments-block dt {
+padding: 15px 15px 0px!important;
+background-color: #FFF;
+font: bold 18px/16px Arial, KacstOne, sans-serif!important;
+margin:0;
+}
+dl#comments-block dd {
+background-color: #FFF;
+padding: 15px 81px 15px 15px;
+margin:0 0 15px;
+}
+dl#comments-block dd p {
+text-align:justify;
+line-height:1.6;
+font-size:13px;
+margin:0;
+}
+dl#comments-block dd p a:hover { border-bottom: 0.5px dotted #b90707; }
+dl#comments-block dd p.deleted-comment {
+font-style: italic;
+color:#FFF;
+}
+dl#comments-block dt span.comment-timestamp {
+font-size: 12px;
+font-weight: normal;
+}
+dl#comments-block dt a { }
+dl#comments-block dt a:hover { border-bottom: 0.5px dotted #b90707; }
+dl#comments-block dt span.comment-timestamp a {
+color:#999;
+border:0;
+}
+dl#comments-block dt span.comment-timestamp a:hover { color:#666; }
+/* AuthorComment Color */
+#comments-block dt.authorcomment { background-color: #FFF6C7; }
+dl#comments-block dt.authorcomment a { color:#B40000; }
+dl#comments-block dt.authorcomment a:hover {
+border-bottom: 1px solid #B40000;
+color:#900;
+}
+dl#comments-block dt.authorcomment span.comment-timestamp a:hover {
+color:#666;
+border:none;
+}
+#comments-block dd.comment-body.authorcomment {
+background-color: #FFF6C7;
+}
+/* Comments Avatar */
+#comments-block.avatar-comment-indent {
+margin-right:0px;
+position: static;
+}
+#comments-block.avatar-comment-indent dd  { margin-right:0; }
+#comments-block .avatar-image-container {
+position: static; float:right; margin-left:10px;
+overflow: hidden;
+height:58px;
+width:56px;
+}
+#comments-block .avatar-image-container img {
+-ms-interpolation-mode:bicubic;
+background: url(http://lh4.ggpht.com/_dInhsEHH_98/S9XNkKOiDjI/AAAAAAAAACU/eu3krMRyirc/s00/avatar.png) no-repeat 0px 0px;
+width:48px; height:48px; /*IE*/
+padding:3px 4px 7px;
+min-height: 48px;
+min-width: 48px;
+border:none;
+float:left;
+}
+#comments-block .avatar-image-container.avatar-stock { background: url(http://lh4.ggpht.com/_dInhsEHH_98/S9XNkKOiDjI/AAAAAAAAACU/eu3krMRyirc/s00/avatar.png) no-repeat -56px 0; }
+#comments-block .avatar-image-container.avatar-stock img {  display:none; }
+/* [COMMENT FORM + BACK LINKS]
+--------------------------------------------------------------------------------------------------------------- */
+#comment-form {
+margin:0 0 20px 0!important;
+padding: 10px 15px 0px;
+background-color:#FFF;
+text-align:justify;
+line-height:1.8;
+font-size: 13px;
+width:auto;
+}
+#comment-form p { margin: 0 0 15px 0; }
+#comment-form i {
+font-style:normal;
+color:#13568A;
+}
+#comment-editor {
+overflow:hidden;
+height:245px;
+width:483px;
+padding:0;
+margin:0;
+}
+#backlinks-container {
+margin:0 0 20px 0!important;
+padding: 0 15px;
+}
+#backlinks-container dl {
+border-bottom: 2px solid #EFE3B9;
+background-color:#F7F7F7;
+}
+p.nocomments {
+font: bold 18px/1 Arial, KacstOne, sans-serif;
+padding-bottom:15px;
+color:#98927C;
+}
+/* [SIDEBAR]
+--------------------------------------------------------------------------------------------------------------- */
+#sidebar h2 {
+background: url(http://files.simplyubuntu.com/images/line.png) no-repeat 0 43px;
+padding: 20px 15px 6px 15px;
+font-size:18px;
+color:#000000;
+font-family: Arial, KacstOne, Tahoma, sans-serif;
+}
+#sidebar a { color:#1782b9; }
+#sidebar a:hover { border-bottom: 0.5px dotted #1782b9; }
+#sidebar a:active{ top: auto; }
+/* [WIDGET]
+--------------------------------------------------------------------------------------------------------------- */
+#NewContainer .widget-content {
+font-size:16px;
+line-height:1.3;
+}
+.widget-content a { color:#b90707; text-decoration:none; outline: 0;
+}
+.widget-content a:hover { border-bottom: 0.5px dotted #b90707;
+}
+#sidebar .widget-content {
+border-bottom-right-radius:5px;
+border-bottom-left-radius:5px;
+-moz-border-radius-bottomright: 5px;
+-moz-border-radius-bottomleft: 5px;
+-webkit-border-bottom-right-radius: 5px;
+-webkit-border-bottom-left-radius: 5px;
+line-height: 1.4;
+background: #FFF;
+margin: 0 0 20px;
+font-size:15px;
+padding:15px;
+font-family: Arial, KacstOne, Tahoma, sans-serif;
+}
+#sidebar .widget-content ul { list-style:none; width:300px; }
+#sidebar .widget-content ul li {
+border-top:1px solid #EEE;
+margin: 0px;
+padding: 0px;
+width:300px;
+font-family: Arial, KacstOne, Tahoma, sans-serif;
+}
+#sidebar .widget-content ul li a {
+background: url(http://lh6.ggpht.com/_dInhsEHH_98/S9xqQf5IK3I/AAAAAAAAAGQ/Er7fEi100KI/s00/icons.png) no-repeat 100% -163px;
+padding: 3px 38px 5px 15px;
+display:block;
+width:247px;
+margin: 0;
+font-family: Arial, KacstOne, Tahoma, sans-serif;
+}
+#sidebar .widget-content ul li a:hover { background-position: 100% -208px; }
+/* [LINKLIST WIDGET]
+--------------------------------------------------------------------------------------------------------------- */
+#sidebar .widget.LinkList .widget-content { padding:0 0 4px 0; }
+/* [PAGELIST WIDGET]
+--------------------------------------------------------------------------------------------------------------- */
+#sidebar .widget.PageList .widget-content { padding:0 0 4px 0; }
+/* [PROFILE WIDGET]
+--------------------------------------------------------------------------------------------------------------- */
+.widget.Profile .widget-content        { border-top:1px solid #EEE;}
+.widget.Profile img.profile-img        { margin: 0 0 0px 12px; background-color:#FFF; float: right; padding: 4px; border:none; }
+.widget.Profile dl.profile-datablock   { margin:0; }
+.widget.Profile dt.profile-data        { font-weight:bold; text-transform:lowercase; margin:0; color:#C33; }
+.widget.Profile dd.profile-data        { font-weight:normal; text-transform:lowercase; margin:0 0 12px 0; }
+.widget.Profile dd.profile-textblock   { margin: 0 0 5px; text-align:justify; line-height:22px; }
+.widget.Profile .profile-link          { font-weight:bold;  font-size:12px; color:#269AC7; }
+.widget.Profile .profile-link:hover    { color:#7D7D7D; }
+/* [FEED WIDGET]
+--------------------------------------------------------------------------------------------------------------- */
+#sidebar .widget.Feed .widget-content { padding:0 0 4px 0; }
+#sidebar .widget.Feed ul li a { background-position: 100% -571px;}
+#sidebar .widget.Feed ul li a:hover { background-position: 100% -619px; }
+#sidebar .widget.Feed ul li p.date { font-size:10px !important; padding-top:0px; color:#444; }
+/* [LABELS WIDGET -list-]
+--------------------------------------------------------------------------------------------------------------- */
+#sidebar .widget.Label .widget-content { padding:0 0 4px 0; }
+#sidebar .widget.Label ul li { padding: 2px 0 0px 15px; width:285px; float:right; }
+#sidebar .widget.Label ul li span { float:left; font-size:13px; color:#999; }
+#sidebar .widget.Label ul li a { background-position: right -483px;padding: 2px 35px 3px 0px;display:block;width:215px;float:right; }
+#sidebar .widget.Label ul li a:hover { background-position: right -528px; }
+/* [LABELS WIDGET -Label-]
+--------------------------------------------------------------------------------------------------------------- */
+#sidebar .widget.Label .cloud-label-widget-content  { padding: 3px 15px 10px 15px!important; text-align: justify; }
+span.label-count { display:none; } .label-size-1 a { font-size:12px; } .label-size-2 a { font-size:14px; } .label-size-3 a { font-size:16px; } .label-size-4 a { font-size:18px; } .label-size-5 a { font-size:24px; }
+/* [BLOG LIST WIDGET]
+--------------------------------------------------------------------------------------------------------------- */
+#sidebar .widget.BlogList .widget-content       { padding:0px 0 4px 0;}
+#sidebar .widget.BlogList .blog-list-container {padding-bottom:0px; }
+#sidebar .widget.BlogList ul li { padding: 3px 0 4px 0; clear:left; }
+#sidebar .widget.BlogList a { background-image:none; padding:0; display:inline; width:auto;text-decoration:none}
+#sidebar .widget.BlogList a:hover {text-decoration:none}
+#sidebar .widget.BlogList .blog-content { float:left;margin:0 0 0 15px;text-indent:0;width:249px}
+#sidebar .widget.BlogList .blog-title {font-weight:normal;line-height:1.4;margin:0px 0 0px 0;}
+#sidebar .widget.BlogList .blog-icon { float:right;margin-top:3px; margin-right:15px;vertical-align:top;text-indent:0!important;width:16px}
+#sidebar .widget.BlogList .item-content { font-size:13px;line-height:1.4; text-align:justify;}
+#sidebar .widget.BlogList .item-thumbnail {float:left;margin:0px 5px 0px 0px}
+#sidebar .widget.BlogList .item-thumbnail img {border: 1px solid #D0D0D0;}
+#sidebar .widget.BlogList .item-thumbnail a:hover img {border: 1px solid #7D7D7D;}
+#sidebar .widget.BlogList .item-title {font-weight:bold; font-size:12px;}
+#sidebar .widget.BlogList .item-title a {color:#269AC7!important;}
+#sidebar .widget.BlogList .item-time {font-size:11px;font-style: normal;clear:left; color:#5EB43C;}
+#sidebar .widget.BlogList .show-option {font-size:15px;text-align:right}
+/* [RECENT COMMENTS]
+--------------------------------------------------------------------------------------------------------------- */
+#sidebar .widget-content .recent-comments { margin: -15px 0; }
+#sidebar .widget-content .recent-comments ul { width:300px; margin: 0 -15px; }
+#sidebar .widget-content .recent-comments li {
+border-top:1px solid #EEE;
+padding: 4px 0 0px 0;
+width:300px;
+float:right;
+}
+#sidebar .widget-content .recent-comments li a {
+background-position: right -254px;
+display:block;
+padding: 0px 37px 5px 15px;
+float: right;
+clear: left;
+width:248px;
+}
+#sidebar .widget-content .recent-comments li b {
+float: left;
+display: block;
+margin-top: -8px;
+text-align: left;
+background: #FFF6C7 url(http://lh6.ggpht.com/_dInhsEHH_98/S9xqQf5IK3I/AAAAAAAAAGQ/Er7fEi100KI/s00/icons.png) no-repeat 15px -124px;
+padding: 4px 5px 3px 31px;
+line-height: 100%;
+color: #403931;
+font-weight: bold;
+font-size: 11px;
+}
+#sidebar .widget-content .recent-comments li a:hover { background-position: right -326px; }
+/* [ARCHIVE WIDGET -flat-]
+--------------------------------------------------------------------------------------------------------------- */
+#sidebar .widget.BlogArchive .widget-content { padding:0 0 4px 0; }
+#sidebar .widget.BlogArchive #ArchiveList { width:100%; overflow:auto; }
+#sidebar .widget.BlogArchive #ArchiveList ul.flat li {
+border-top:1px solid #EEE;
+padding: 0px 0 0px 0 !important;
+text-indent:0 !important;
+width:150px;
+float:right;
+margin:0;
+}
+#sidebar .widget.BlogArchive #ArchiveList ul.flat li span { display:none; }
+#sidebar .widget.BlogArchive #ArchiveList ul.flat li a {
+display:block;
+padding: 3px 35px 5px 0px;
+background-image: url(http://lh6.ggpht.com/_dInhsEHH_98/S9xqQf5IK3I/AAAAAAAAAGQ/Er7fEi100KI/s00/icons.png);
+background-repeat: no-repeat;
+background-position: right -398px;
+width:100px;
+}
+#sidebar .widget.BlogArchive #ArchiveList ul.flat li a:hover { background-position: right -440px; }
+/* [ARCHIVE WIDGET -hierarchy-]
+--------------------------------------------------------------------------------------------------------------- */
+.widget.BlogArchive #ArchiveList ul.hierarchy { list-style:none;clear:both; }
+#sidebar .widget.BlogArchive #ArchiveList a { background-image:none; padding:0; display:inline; width:auto;text-decoration:none}
+.widget.BlogArchive #ArchiveList li { width:100%; overflow:auto;}
+.widget.BlogArchive #ArchiveList ul.hierarchy li {border-top:1px solid #EEE;list-style:none;list-style-image:none;padding:3px 15px 0px 15px;width:270px;text-indent:0;margin:0;} /* years */
+/* months */
+.widget.BlogArchive #ArchiveList ul.hierarchy ul { clear:both; margin:0 -0px; width:270px;}
+.widget.BlogArchive #ArchiveList ul.hierarchy ul li { width:255px;border-top:1px solid #EEE;padding:3px 15px 0px 0;}
+/* posts */
+.widget.BlogArchive #ArchiveList ul ul ul.posts { margin-top:2px; width:255px;}
+.widget.BlogArchive #ArchiveList ul ul ul.posts li {width:240px;border-top:1px solid #EEE;padding:3px 15px 4px 0;}
+.widget.BlogArchive #ArchiveList .collapsed ul {display:none}
+#ArchiveList .toggle { font: bold 14px Arial, KacstOne, Helvetica, sans-serif; cursor:pointer; float:right; }
+#ArchiveList .toggle-open { line-height:20px; }
+.post-count-link { float:right; }
+#ArchiveList span.post-count { float:left; font-size:13px; color:#999; }
+#ArchiveList a.toggle,
+#ArchiveList a.toggle:link,
+#ArchiveList a.toggle:visited,
+#ArchiveList a.toggle:hover{color:inherit;text-decoration:none}
+/* [FOOTER]
+--------------------------------------------------------------------------------------------------------------- */
+#footer-wrapper {
+min-width: 830px;
+clear:both;
+color:#999;
+}
+#footer-wrapper a { color:#75aa02; }
+#footer-wrapper a:hover { border-bottom: 0.5px dotted #75aa02; }
+#footer {
+width: 950px;
+clear:both;
+position: relative;
+margin:0 auto;
+font-size:12px;
+line-height: 1.6;
+padding-top: 30px;
+padding-bottom:21px;
+border-top:1.5px dotted #FFF;
+}
+/* --- END ------[STYLE BY ALMSN3.BLOGSPOT.COM ]--- */
+
+/* [CUSTOM]
+--------------------------------------------------------------------------------------------------------------- */
+#cookieChoiceInfo {
+    display: none !important;
+}
+
+]]></b:skin>
+
+<script type='text/javascript'>
+<!--
+function SelectAll(id)
+{    document.getElementById(id).focus();   document.getElementById(id).select();}
+
+function closediv(lunchID) {	document.getElementById('joinus' + lunchID).style.display = "none";$("#joinus2").addClass("hide");}
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-13214229-3']);
+  _gaq.push(['_setDomainName', '.simplyubuntu.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+
+//-->
+</script>
+
+<!-- FIX Layout-Editor -->
+<style media='screen' type='text/css'>
+body#layout #content-wrapper, body#layout #head-wrapper, body#layout #head-wrapper #head, body#layout #top-wrapper, body#layout #top-wrapper #top, body#layout #footer-wrapper, body#layout #footer {min-width:765px;width: 765px;}body#layout #content-area { width: 485px; } body#layout #sidebar { width: 245px; }
+
+body#layout a:active{top:auto}body#layout #head-wrapper,body#layout #head-wrapper #head,body#layout #head-wrapper #head #header,body#layout #top-wrapper,body#layout #top-wrapper #top,body#layout #content-wrapper,body#layout #content-wrapper #content{font-size:15px;margin:0;padding:0;background:none}body#layout #head-wrapper,body#layout #content-wrapper #content{padding:20px 0 0}body#layout #top-wrapper #top .widget-content{padding:0}body#layout #sidebar .widget .widget-content{font-size:15px;margin:0;padding:0}body#layout #footer-wrapper,body#layout #footer-wrapper #footer{font-size:15px;margin:0;padding:0;background:none;border:none}body#layout #content,body#layout #head-wrapper #head #header .widget,body#layout #top-wrapper #top .widget,body#layout #footer-wrapper #footer .widget{width:auto;overflow:visible}body#layout #by {text-align: right;padding: 0px 10px 10px;}</style>
+<!--[if lt IE 8]><style media='screen' type='text/css'>a:active,.post-tools li a:active{outline:0;position:static;top:0;right:0;left:0}* html ul#navmenu ul{right:-1px}* html #comment-editor{width:100%}.labels-post a:active{position:relative;right:0}.blog-pager span#blog-pager-newer-link a:active{position:relative;left:0}.blog-pager span#blog-pager-older-link a:active{position:relative;right:0}* html div.code-me,* html div.code-me pre,li,blockquote,.download,.status-msg,#sidebar h4,#sidebar .widget-content,#content,#footer-wrapper,#footer,.labels-post{height:1%}div.code-me pre,div.code-me div,div.code-me code{padding-top:7px;padding-bottom:20px}</style><![endif]-->
+<!--[if IE]><style media='screen' type='text/css'> input#livesearch2{padding: 5px 25px 0px 0;}</style><![endif]-->
+
+<script type='text/javascript'>
+//<![CDATA[
+// RECENT COMMENTS
+function showrecentcomments(json) {
+    for (var i = 0; i < a_rc; i++) {
+        var b_rc = json.feed.entry[i];
+        var c_rc;
+        if (i == json.feed.entry.length) break;
+        for (var k = 0; k < b_rc.link.length; k++) {
+            if (b_rc.link[k].rel == 'alternate') {
+                c_rc = b_rc.link[k].href;
+                break;
+            }
+        }
+        c_rc = c_rc.replace("#", "#");
+        var d_rc = c_rc.split("#");
+        d_rc = d_rc[0];
+        var e_rc = d_rc.split("/");
+        e_rc = e_rc[5];
+        e_rc = e_rc.split(".html");
+        e_rc = e_rc[0];
+        var f_rc = e_rc.replace(/-/g, " ");
+        f_rc = f_rc.link(d_rc);
+        var g_rc = b_rc.published.$t;
+        var h_rc = g_rc.substring(0, 4);
+        var i_rc = g_rc.substring(5, 7);
+        var j_rc = g_rc.substring(8, 10);
+        var k_rc = new Array();
+        k_rc[1] = "يناير";
+        k_rc[2] = "فبراير";
+        k_rc[3] = "مارس";
+        k_rc[4] = "ابريل";
+        k_rc[5] = "مايو";
+        k_rc[6] = "يونيو";
+        k_rc[7] = "يوليو";
+        k_rc[8] = "أغسطس";
+        k_rc[9] = "سبتمبر";
+        k_rc[10] = "أكتوبر";
+        k_rc[11] = "نوفمبر";
+        k_rc[12] = "ديسمبر";
+        if ("content" in b_rc) {
+            var l_rc = b_rc.content.$t;
+        } else if ("summary" in b_rc) {
+            var l_rc = b_rc.summary.$t;
+        } else var l_rc = "";
+        var re = /<\S[^>]*>/g;
+        l_rc = l_rc.replace(re, "");
+        if (m_rc == true) document.write(k_rc[parseInt(i_rc, 10)] + ' ' + j_rc + ' ');
+        document.write('<li>');
+        if (n_rc == true) document.write(f_rc);
+
+        document.write('<a href="' + c_rc + '">');
+        if (l_rc.length < o_rc) {
+            document.write(l_rc);
+        } else {
+            l_rc = l_rc.substring(0, o_rc);
+            var p_rc = l_rc.lastIndexOf(" ");
+            l_rc = l_rc.substring(0, p_rc);
+            document.write(l_rc + '&hellip;');
+        }
+        document.write('</a><br />');
+        document.write('<b>' + b_rc.author[0].name.$t + '</b></li>');
+    }
+}
+//]]>
+</script>
+
+
+		<link href='https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/pikachoose/styles/bottom.css' rel='stylesheet' type='text/css'/>
+		<script src=' https://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.js' type='text/javascript'/>
+		<script src='https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/pikachoose/lib/jquery.pikachoose.full.js' type='text/javascript'/>
+		<script language='javascript'>
+			$(document).ready(
+				function (){
+					$(&quot;#pikame&quot;).PikaChoose();
+				});
+		</script>
+    <link href='https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/colorbox/colorbox.css' rel='stylesheet'/>
+    <script src='https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/colorbox/jquery.colorbox.js'/>
+
+		<script>
+			$(document).ready(function(){
+				//Examples of how to assign the ColorBox event to elements
+				$(&quot;.inline&quot;).colorbox({inline:true, innerWidth:600});
+				$(&quot;.callbacks&quot;).colorbox({
+					onOpen:function(){ alert(&#39;onOpen: colorbox is about to open&#39;); },
+					onLoad:function(){ alert(&#39;onLoad: colorbox has started to load the targeted content&#39;); },
+					onComplete:function(){ alert(&#39;onComplete: colorbox has displayed the loaded content&#39;); },
+					onCleanup:function(){ alert(&#39;onCleanup: colorbox has begun the close process&#39;); },
+					onClosed:function(){ alert(&#39;onClosed: colorbox has completely closed&#39;); }
+				});
+				
+				//Example of preserving a JavaScript event for inline calls.
+				$(&quot;#click&quot;).click(function(){ 
+					$(&#39;#click&#39;).css({&quot;background-color&quot;:&quot;#f00&quot;, &quot;color&quot;:&quot;#fff&quot;, &quot;cursor&quot;:&quot;inherit&quot;}).text(&quot;Open this window again and this message will still be here.&quot;);
+					return false;
+				});
+			});
+		</script>
+
+
+</head>
+
+<!-- <body>
+  <b:section id="navbar" class="navbar" maxwidgets="1" showaddelement="no">
+    <b:widget type="Navbar" id="Navbar1" locked="yes"/>
+  </b:section>
+ --> <body>
+
+<div id='head-wrapper'>
+    <div id='head'>
+        <b:section id='header' showaddelement='no'>
+          <b:widget id='Header1' locked='true' title='كتاب أوبنتو ببساطة - ابدأ مع نظام أوبنتو لينُكس الآن‏!‏ (رأس الصفحة)' type='Header'>
+            <b:widget-settings>
+              <b:widget-setting name='displayUrl'/>
+              <b:widget-setting name='displayHeight'>0</b:widget-setting>
+              <b:widget-setting name='sectionWidth'>-1</b:widget-setting>
+              <b:widget-setting name='useImage'>false</b:widget-setting>
+              <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+              <b:widget-setting name='imagePlacement'>BEHIND</b:widget-setting>
+              <b:widget-setting name='displayWidth'>0</b:widget-setting>
+            </b:widget-settings>
+            <b:includable id='main'>
+                    <b:include name='description'/>
+                    <b:include name='navigation'/>
+                </b:includable>
+            <b:includable id='description'>
+                    <p class='description'><data:description/></p>
+                </b:includable>
+            <b:includable id='navigation'>
+
+
+<div id='logo'>
+<a href='http://www.simplyubuntu.com/'>  <p id='logo_img'><img alt='شعار المدونة' src='https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/simplyubuntu_logo1.6.png'/>
+</p></a>
+
+
+
+</div>
+
+                    <ul id='navmenu'>
+
+
+					    <!-- Nav تعديل القائمة برأس الصفحة -->
+                        <li><a href='http://www.aabouzaid.com/'><span>موقع المؤلف</span></a></li>
+                        <li><a href='http://www.aabouzaid.com/p/about.html'><span>عن المؤلف</span></a></li>
+                        <li><a href='//librebooks.org/writer/%D8%A3%D8%AD%D9%85%D8%AF-%D9%85-%D8%A3%D8%A8%D9%88%D8%B2%D9%8A%D8%AF/' target='_blank'><span>كتب أخرى</span></a></li>
+                        <li><a class='mail' href='http://www.aabouzaid.com/p/contact.html' title='اتصل بي عبر البريد الإلكتروني'><span>Mail</span></a></li>
+
+                        <li><a class='search' href='http://www.simplyubuntu.com/p/search.html' title='ابحث في الموقع'><span>Search</span></a></li>
+
+                        <li><a class='rss' href='http://feeds.feedburner.com/ahmed-abouzaid' title='تابع الموقع عبر RSS'><span>RSS</span></a></li>
+
+
+                        <!-- / Nav تعديل القائمة برأس الصفحة -->
+						
+                    </ul>
+                </b:includable>
+            <b:includable id='title'>
+                    <data:title/>
+                </b:includable>
+          </b:widget>
+        </b:section>
+    </div>
+</div>
+
+
+
+<div calss='top-wrapper'>
+    <b:section id='top' showaddelement='yes'/>
+</div>
+
+<div id='nav2-wrapper'>
+<ul id='nav2'>
+          <li id='list1'><a href='http://www.simplyubuntu.com/p/share.html' title='ساهم في نشر الكتاب على الإنترنت'><span>ساهم في نشر الكتاب</span></a></li>
+          <li id='list2'><a href='http://www.simplyubuntu.com/p/hard-copy.html' title='أحصل على نسخة مطبوعة فاخرة'><span>أحصل على نسخة مطبوعة فاخرة</span></a></li>
+          <li id='list3'><a href='http://www.simplyubuntu.com/p/reviews.html' title='آراء القراء'><span>آراء القراء</span></a></li>
+          <li id='list4'><a href='http://www.simplyubuntu.com/p/get-it.html' title='اقرأ الكتاب الآن!'><span>اقرأ الكتاب الآن!</span></a></li>
+          <li id='list5'><a href='http://www.simplyubuntu.com/p/about-book.html' title='معلومات أكثر عن الكتاب'><span>عن الكتاب</span></a></li>
+          <li id='list6'><a href='http://www.simplyubuntu.com/p/know-about-ubuntu.html' title='تعرف أكثر على نظام أوبنتو'><span>تعرف على أوبنتو</span></a></li>
+          <li id='list7'><a href='http://www.simplyubuntu.com/' title='الصفحة الرئيسية'><span>الصفحة الرئيسية</span></a></li>
+</ul>
+</div>
+
+
+<div id='content-wrapper'><div id='content'>
+
+
+
+
+
+	<b:if cond='data:blog.pageType == &quot;static_page&quot;'>
+	<b:else/>
+
+	<!-- New widgets container Start -->
+	<b:section class='NewContainer' id='NewContainer'>
+<b:widget id='Text1' locked='false' title='' type='Text'>
+  <b:widget-settings>
+    <b:widget-setting name='content'>
+    <![CDATA[<div dir="rtl" style="text-align: justify; font-size: 16px; font-family: Arial, KacstOne; line-height:1.5 pt;" trbidi="on"><br/><p style="text-align:center"><img style="width: 804px; height: 330px;" alt="الغلاف ولقطات من الكتاب" src="https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/simply_ubuntu_front_image_with_4p_920.png" /></p><br/><p style="text-align: justify;"><b>ابدأ الآن مع نظام التشغيل الرائع أوبنتو لينوكس!</b><br/></p><p style="text-align: justify;">إذا مللت من مشاكل نظام التشغيل الذي تستعمله مثل الفيروسات وغيرها من الأشياء التي تنغص عليك استمتاعك باستخدام الكمبيوتر، ما رأيك في تجربة نظام متطور، سريع، خفيف وأيضا آمن، فالحياة أقصر من أن تقضيها في التعامل مع المشاكل! تعرف الآن على نظام أوبنتو الرائع. سواء كنت تستعمل جهاز مكتبي أو جهاز محمول أو حتى نت​بوك فنظام أوبنتو سيكون نظامك المحبب والمثالي بعد قراءتك لهذه الكتاب ... <a href="http://www.simplyubuntu.com/p/know-about-ubuntu.html">تعرف أكثر على أوبنتو لينُكس</a>.<br/><br/><b> كتاب أوبنتو ببساطة</b> سيساعدك في استخدام هذا النظام الرائع بكل سهولة ودون عناء. الكتاب مناسب لكل من يريد استخدام نظام التشغيل أوبنتو أو من بدأ باستعماله حديثا، حيث يتميز -وكما يظهر من اسمه- بأسلوب بسيط وسلس دون الدخول في تفاصيل معقدة. يساعدك الكتاب على استخدام أوبنتو للمهام اليومية المعتادة من الدخول على الإنترنت وتشغيل الصوتيات والمرئيات، والكتابة باستخدام الأدوات المكتبية، إلى آخر تلك الأشياء التي يقوم بها أغلب مستخدمي الكمبيوتر. ويعتمد بشكل كامل على استخدام الواجهة الرسومية ودعم الشرح بالصور التي تسهل الانتقال لاستخدم نظام أوبنتو بكل سهولة وفي وقت قصير ... <a href="http://www.simplyubuntu.com/p/about-book.html">مزيد من المعلومات عن الكتاب</a>.<br/></p><a href="http://www.simplyubuntu.com/p/hard-copy.html" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 2.4em; margin-top: 3.5em;"><img alt="أنا أدعم البرمجيات الحرة مفتوحة المصدر" src="https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/support_foss_color.png" border="0" /></a><br/><br/><p style="text-align:justify"><b>حمل الكتاب الآن</b></p><p style="text-align: justify;">إبدأ الآن مع أوبنتو وحمّل نسخة إلكترونية من الكتاب بصيغة PDF مجانا! اقرأ الكتاب، أرسله لأصدقاؤك ومعارفك، فهو متاح لكل الناس وبرخصة Creative Commons (يرجى ارسال رابط الموقع وليس إعادة رفع الكتاب على مواقع أخرى).</p><p style="text-align:left"><a class="inline cboxElement" href="#inline_content"><img style="width: 184px; height: 30px; margin-top: 0.9em;" alt="حمل الكتاب الآن!" src="https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/download.png" /></a><br/></p><p></p><p style="text-align:justify"><b>أحصل على نسختك الورقية</b></p><p style="text-align: justify;">ما رأيك في الحصول على نسخة ورقية فاخرة من هذا الكتاب ليكن ضمن مكتبتك المنزلية أو لإهداؤه لأحد أصدقائك أو وضعه في المكتبة العامة في مدينتك؟ (أشجعك على هذا كثيراً) ساهم في دعم ثقافة البرمجيات الحرة مفتوحة المصدر، وتذكر أن ٢٠٪ من عوائد النسخة الورقية مخصصة لدعم مشاريع البرمجيات الحرة والمصادر المفتوحة.</p><p></p><p style="text-align:left"><a href="http://www.simplyubuntu.com/p/hard-copy.html"><img style="width: 183px; height: 30px; margin-top: 0.7em;" alt="أحصل على نسخة ورقية من الكتاب" src="https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/paper_book.png" /></a></p><p></p><p></p><p></p><br/></div><br/><br/>]]>
+    </b:widget-setting>
+  </b:widget-settings>
+  <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+</b:widget>
+<b:widget id='HTML2' locked='false' title='' type='HTML'>
+  <b:widget-settings>
+    <b:widget-setting name='content'>&lt;!doctype html public &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt; 
+&lt;div style=&#39;display:none&#39;&gt;
+&lt;div id=&#39;inline_content&#39; style=&#39;padding:10px 10px 20px 10px; background:#fff;&#39;&gt;
+&lt;div dir=&quot;rtl&quot; style=&quot;text-decoration:none; text-align: center;&quot; trbidi=&quot;on&quot;&gt;
+&lt;p style=&quot;text-align: right; font-size:20px; font-weight: bold; padding:20px 10px 10px 0;&quot;&gt;&lt;span style=&quot;color:#666&quot;&gt;&#9899;&lt;/span&gt; احصل على الكتاب الآن!&lt;/p&gt;
+&lt;a href=&quot;http://download.simplyubuntu.com/getit.php&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/download.png&quot; alt=&quot;حمل الكتاب كاملا&#1611; الآن!&quot;/&gt;&lt;/a&gt;&amp;#8194;&amp;#8194;&amp;#8194;&amp;#8194;&amp;#8194;&amp;#8194;&amp;#8194;&amp;#8194;&amp;#8194;&amp;#8194;&amp;#8194;&amp;#8194;&lt;a href=&quot;http://www.simplyubuntu.com/p/hard-copy.html&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/paper_book.png&quot; alt=&quot;احصل على نسختك المطبوعة من الكتاب!&quot;/&gt;&lt;/a&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;p style=&quot;text-align: right; font-size:20px; font-weight: bold; padding:10px 10px 10px 0;&quot;&gt;&lt;span style=&quot;color:#666&quot;&gt;&#9899;&lt;/span&gt; ساهم في دعم نظام أوبنتو وكتاب أوبنتو ببساطة!&lt;/p&gt;
+&lt;img style=&quot;width: 550px; height: 205px;&quot; src=&quot;http://files.simplyubuntu.com/images/share_simplyubuntu_book.jpg&quot; alt=&quot;&quot;/&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;p style=&quot;text-align: justify; padding: 0 25px 0 25px;&quot;&gt;كتاب أوبنتو ببساطة هو كتاب حر ومتاح للتحميل بشكل مجاني&#1548; إذا أعجبك وتريد المساهمة في نشر نظام أوبنتو وثقافة البرمجيات الحرة والمصادر المفتوحة في العالم العربي ساهم بنشر الكتاب على الشبكات الاجتماعية المختلفة&#1548; وهذا بضغطة واحدة فقط :-)&lt;/p&gt;
+&lt;br /&gt;
+
+&lt;div id=&quot;sharebox&quot;&gt;
+ &lt;ul&gt;
+  &lt;li class=&quot;twitter&quot;&gt;&lt;a href=&quot;http://bitly.com/On51h7&quot; target=&quot;_blank&quot;&gt;&lt;!--&lt;img src=&quot;https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/sharebox/twitter_share.png&quot; alt=&quot;شعار المشاركة على تويتر&quot;/&gt;--&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class=&quot;facebook&quot;&gt;&lt;a href=&quot;http://on.fb.me/NrwTiX&quot; target=&quot;_blank&quot;&gt;&lt;!--&lt;img src=&quot;https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/sharebox/facebook_share.png&quot; alt=&quot;شعار المشاركة على فيس بوك&quot;/&gt;--&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class=&quot;google&quot;&gt;&lt;a href=&quot;http://bit.ly/MieHeb&quot; target=&quot;_blank&quot;&gt;&lt;!--&lt;img src=&quot;https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/sharebox/googleplus_share.png&quot; alt=&quot;شعار المشاركة على جوجل بلس&quot;/&gt;--&gt;&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/!doctype&gt;</b:widget-setting>
+  </b:widget-settings>
+  <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+</b:widget>
+</b:section>
+	<!-- New widgets container End -->
+
+	</b:if>
+
+
+
+
+<b:section class='main' id='content-area' showaddelement='yes'>
+  <b:widget id='Blog1' locked='true' title='رسائل المدونة الإلكترونية' type='Blog'>
+    <b:widget-settings>
+      <b:widget-setting name='showDateHeader'>true</b:widget-setting>
+      <b:widget-setting name='style.textcolor'>#ffffff</b:widget-setting>
+      <b:widget-setting name='showShareButtons'>true</b:widget-setting>
+      <b:widget-setting name='showCommentLink'>true</b:widget-setting>
+      <b:widget-setting name='style.urlcolor'>#ffffff</b:widget-setting>
+      <b:widget-setting name='showAuthor'>true</b:widget-setting>
+      <b:widget-setting name='style.linkcolor'>#ffffff</b:widget-setting>
+      <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
+      <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
+      <b:widget-setting name='reactionsLabel'/>
+      <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
+      <b:widget-setting name='style.layout'>1x1</b:widget-setting>
+      <b:widget-setting name='showLabels'>true</b:widget-setting>
+      <b:widget-setting name='showLocation'>true</b:widget-setting>
+      <b:widget-setting name='showTimestamp'>true</b:widget-setting>
+      <b:widget-setting name='postsPerAd'>1</b:widget-setting>
+      <b:widget-setting name='showBacklinks'>false</b:widget-setting>
+      <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
+      <b:widget-setting name='showInlineAds'>false</b:widget-setting>
+      <b:widget-setting name='showReactions'>false</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main' var='top'>
+ <!--Intense Debate-->
+<script src='http://www.intensedebate.com/js/bloggerTemplateLinkWrapper.php?acct=65d94fce4a6a5075bbe3c44f93212b6b'/>
+<!--/Intense Debate-->
+
+  <!-- posts -->
+  <div class='blog-posts hfeed'>
+
+    <b:include data='top' name='status-message'/>
+	<b:include data='top' name='status-archive'/>
+
+    <data:defaultAdStart/>
+    <b:loop values='data:posts' var='post'>
+
+      <b:if cond='data:post.labels'>
+      <b:loop values='data:post.labels' var='label'>
+        <b:if cond='data:label.isLast == &quot;true&quot;'>
+        <b:if cond='data:label.name != &quot;تدوينات مصغرة&quot;'>
+          <b:include data='post' name='post'/>
+        <b:else/>
+          <b:include data='post' name='minipost'/>
+        </b:if>
+        </b:if>
+      </b:loop>
+      <b:else/>
+          <b:include data='post' name='post'/>
+      </b:if>
+	  
+      <b:if cond='data:blog.pageType == &quot;static_page&quot;'>
+        
+   <!--Intense Debate-->
+<b:if cond='data:post.numComments == 0'>
+    <div id='IDCommentInfoPostTitle' style='display:none'><data:post.title/></div><div id='IDCommentInfoPostTime' style='display:none'><data:post.timestampISO8601/></div><div id='IDCommentInfoPostAuthor' style='display:none'><data:post.author/></div><div id='IDCommentInfoPostCats' style='display:none'><b:if cond='data:post.labels'><b:loop values='data:post.labels' var='label'><data:label.name/>|</b:loop></b:if></div>  <script type='text/javascript'>var idcomments_acct=&#39;65d94fce4a6a5075bbe3c44f93212b6b&#39;; var idcomments_post_id=&#39;<data:post.id/>&#39;; var idcomments_post_url=&#39;<data:post.url/>&#39;; var idcomments_post_title=document.getElementById(&#39;IDCommentInfoPostTitle&#39;).innerHTML;var idcomments_post_author=document.getElementById(&#39;IDCommentInfoPostAuthor&#39;).innerHTML;var idcomments_post_time=document.getElementById(&#39;IDCommentInfoPostTime&#39;).innerHTML;var idcomments_post_cats=document.getElementById(&#39;IDCommentInfoPostCats&#39;).innerHTML; var commentScriptWrapper = document.createElement(&#39;SCRIPT&#39;);commentScriptWrapper.type = &#39;text/javascript&#39;;commentScriptWrapper.src = &#39;http://www.intensedebate.com/js/bloggerTemplateCommentWrapper2.php?acct=&#39;+idcomments_acct+&#39;&amp;postid=&#39;+idcomments_post_id+&#39;&amp;title=&#39;+encodeURIComponent(idcomments_post_title)+&#39;&amp;url=&#39;+idcomments_post_url+&#39;&amp;posttime=&#39;+encodeURIComponent(idcomments_post_time)+&#39;&amp;postauthor=&#39;+encodeURIComponent(idcomments_post_author)+&#39;&amp;postcats=&#39;+encodeURIComponent(idcomments_post_cats);document.getElementsByTagName(&#39;HEAD&#39;)[0].appendChild(commentScriptWrapper);</script>
+   <b:else/>
+<!--/Intense Debate-->
+<b:include data='post' name='comments'/>
+<!--Intense Debate-->
+</b:if>
+<!--/Intense Debate-->
+
+      </b:if>
+      <b:if cond='data:blog.pageType == &quot;item&quot;'>
+        
+   <!--Intense Debate-->
+<b:if cond='data:post.numComments == 0'>
+    <div id='IDCommentInfoPostTitle' style='display:none'><data:post.title/></div><div id='IDCommentInfoPostTime' style='display:none'><data:post.timestampISO8601/></div><div id='IDCommentInfoPostAuthor' style='display:none'><data:post.author/></div><div id='IDCommentInfoPostCats' style='display:none'><b:if cond='data:post.labels'><b:loop values='data:post.labels' var='label'><data:label.name/>|</b:loop></b:if></div>  <script type='text/javascript'>var idcomments_acct=&#39;65d94fce4a6a5075bbe3c44f93212b6b&#39;; var idcomments_post_id=&#39;<data:post.id/>&#39;; var idcomments_post_url=&#39;<data:post.url/>&#39;; var idcomments_post_title=document.getElementById(&#39;IDCommentInfoPostTitle&#39;).innerHTML;var idcomments_post_author=document.getElementById(&#39;IDCommentInfoPostAuthor&#39;).innerHTML;var idcomments_post_time=document.getElementById(&#39;IDCommentInfoPostTime&#39;).innerHTML;var idcomments_post_cats=document.getElementById(&#39;IDCommentInfoPostCats&#39;).innerHTML; var commentScriptWrapper = document.createElement(&#39;SCRIPT&#39;);commentScriptWrapper.type = &#39;text/javascript&#39;;commentScriptWrapper.src = &#39;http://www.intensedebate.com/js/bloggerTemplateCommentWrapper2.php?acct=&#39;+idcomments_acct+&#39;&amp;postid=&#39;+idcomments_post_id+&#39;&amp;title=&#39;+encodeURIComponent(idcomments_post_title)+&#39;&amp;url=&#39;+idcomments_post_url+&#39;&amp;posttime=&#39;+encodeURIComponent(idcomments_post_time)+&#39;&amp;postauthor=&#39;+encodeURIComponent(idcomments_post_author)+&#39;&amp;postcats=&#39;+encodeURIComponent(idcomments_post_cats);document.getElementsByTagName(&#39;HEAD&#39;)[0].appendChild(commentScriptWrapper);</script>
+   <b:else/>
+<!--/Intense Debate-->
+<b:include data='post' name='comments'/>
+<!--Intense Debate-->
+</b:if>
+<!--/Intense Debate-->
+
+      </b:if>
+
+      <b:if cond='data:post.includeAd'>
+        <b:if cond='data:post.isFirstPost'>
+          <data:defaultAdEnd/>
+        <b:else/>
+          <data:adEnd/>
+        </b:if>
+        <div class='inline-ad'>
+          <data:adCode/>
+        </div>
+        <data:adStart/>
+      </b:if>
+      <b:if cond='data:post.trackLatency'>
+        <data:post.latencyJs/>
+      </b:if>
+    </b:loop>
+    <data:adEnd/>
+  </div>
+
+  <!-- navigation -->
+  <b:if cond='data:blog.pageType != &quot;item&quot;'><b:include name='nextprev'/></b:if>
+
+  
+  <b:if cond='data:top.showStars'>
+    <script src='//www.google.com/jsapi' type='text/javascript'/>
+    <script type='text/javascript'>
+      google.load(&quot;annotations&quot;, &quot;1&quot;, {&quot;locale&quot;: &quot;<data:top.languageCode/>&quot;});
+      function initialize() {
+        google.annotations.setApplicationId(<data:top.blogspotReviews/>);
+        google.annotations.createAll();
+        google.annotations.fetch();
+      }
+      google.setOnLoadCallback(initialize);
+    </script>
+  </b:if>
+</b:includable>
+    <b:includable id='backlinkDeleteIcon' var='backlink'><span expr:class='&quot;item-control &quot; + data:backlink.adminClass'><a expr:href='data:backlink.deleteUrl' expr:title='data:top.deleteBacklinkMsg'>[حذف]</a></span></b:includable>
+    <b:includable id='backlinks' var='post'><a name='links'/>
+
+  <b:if cond='data:post.numBacklinks != 0'>
+  <h4 class='backlinks'><data:post.backlinksLabel/></h4>
+  
+    <dl>
+      <b:loop values='data:post.backlinks' var='backlink'>
+        <div class='collapsed-backlink backlink-control'>
+          <dt>
+            <span class='backlink-toggle-zippy'>&#160;</span>
+            <a expr:href='data:backlink.url' rel='nofollow'><data:backlink.title/></a>
+            <b:include data='backlink' name='backlinkDeleteIcon'/>
+          </dt>
+          <dd>
+            <data:backlink.snippet/>
+          </dd>
+          <dd class='comment-footer collapseable'>
+            <span class='comment-author'><data:post.authorLabel/> <data:backlink.author/></span>
+            <span class='comment-timestamp'><data:post.timestampLabel/> <data:backlink.timestamp/></span>
+          </dd>
+        </div>
+      </b:loop>
+    </dl>
+  </b:if>
+</b:includable>
+    <b:includable id='comment-form' var='post'><a name='comment-form'/>
+    <h4 class='comment-post-message'>هل تريد التعليق على التدوينة &#1567;</h4>
+  <div id='comment-form'>
+    <p><data:blogCommentMessage/></p>
+    <data:blogTeamBlogMessage/>
+    <a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/>
+    <iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' frameborder='0' id='comment-editor' name='comment-editor' src=''/>
+    <data:post.friendConnectJs/>
+    <data:post.cmtfpIframe/>
+    <script type='text/javascript'>
+      BLOG_CMT_createIframe(&#39;<data:post.appRpcRelayPath/>&#39;, &#39;<data:post.communityId/>&#39;);
+    </script>
+  </div>
+</b:includable>
+    <b:includable id='commentDeleteIcon' var='comment'><span expr:class='&quot;item-control &quot; + data:comment.adminClass'><a expr:href='data:comment.deleteUrl' expr:title='data:top.deleteCommentMsg'><span style='font-weight:normal;'>[حذف]</span></a></span></b:includable>
+    <b:includable id='comment_count_picker' var='post'>
+  <a class='comment-link' expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'>
+    <data:post.commentLabelFull/>:
+  </a>
+</b:includable>
+    <b:includable id='comment_picker' var='post'>
+  <b:if cond='data:post.showThreadedComments'>
+    <b:include data='post' name='threaded_comments'/>
+  <b:else/>
+    <b:include data='post' name='comments'/>
+  </b:if>
+</b:includable>
+    <b:includable id='comments' var='post'>
+  <div class='comments' id='comments'><a name='comments'/>
+  
+  <b:if cond='data:post.allowComments'>
+      <b:if cond='data:post.numComments == 0'><b:else/>
+<h4 class='numcomments'><b:if cond='data:post.numComments == 1'> تعليق واحد على <span class='bracket'>:</span> <data:post.title/> <span class='bracket'/><b:else/><b:if cond='data:post.numComments == 2'> تعليقان على <span class='bracket'>:</span> <data:post.title/> <span class='bracket'/><b:else/><span class='numcomments'><data:post.numComments/></span> تعليق على <span class='bracket'>:</span> <data:post.title/> <span class='bracket'/></b:if></b:if></h4>
+</b:if>
+
+      <b:if cond='data:post.commentPagingRequired'>
+        <span class='paging-control-container'>
+          <a expr:class='data:post.oldLinkClass' expr:href='data:post.oldestLinkUrl'><data:post.oldestLinkText/></a>
+          &#160;
+          <a expr:class='data:post.oldLinkClass' expr:href='data:post.olderLinkUrl'><data:post.olderLinkText/></a>
+          &#160;
+          <data:post.commentRangeText/>
+          &#160;
+          <a expr:class='data:post.newLinkClass' expr:href='data:post.newerLinkUrl'><data:post.newerLinkText/></a>
+          &#160;
+          <a expr:class='data:post.newLinkClass' expr:href='data:post.newestLinkUrl'><data:post.newestLinkText/></a>
+        </span>
+      </b:if>
+
+      <dl expr:class='data:post.avatarIndentClass' id='comments-block'>
+        <b:loop values='data:post.comments' var='comment'>
+		
+		<b:if cond='data:comment.author != data:post.author'>
+		
+          <dt expr:class='&quot;comment-author &quot; + data:comment.authorClass' expr:id='data:comment.anchorName'>
+            <b:if cond='data:comment.favicon'>
+              <img expr:src='data:comment.favicon' height='16px' style='margin-bottom:-2px;' width='16px'/>
+            </b:if>
+            <a expr:name='data:comment.anchorName'/>
+            <b:if cond='data:blog.enabledCommentProfileImages'>
+              <data:comment.authorAvatarImage/>
+            </b:if>
+            <b:if cond='data:comment.authorUrl'>
+              <a expr:href='data:comment.authorUrl' rel='nofollow'><data:comment.author/></a>
+            <b:else/>
+              <data:comment.author/>
+            </b:if>
+            <span style='font-weight:normal;'><data:commentPostedByMsg/></span><br/>
+			<span class='comment-timestamp'>
+              <a expr:href='data:comment.url' title='comment permalink'>
+                <span style='font-weight:normal;'><data:comment.timestamp/></span>
+              </a>
+              <b:include data='comment' name='commentDeleteIcon'/>
+            </span>
+          </dt>
+		  
+          <dd class='comment-body'>
+            <b:if cond='data:comment.isDeleted'>
+              <p class='deleted-comment'><data:comment.body/></p>
+            <b:else/>
+              <p><data:comment.body/></p>
+            </b:if>
+          </dd>
+		  
+		  <b:else/>
+		  
+		  <dt expr:class='&quot;comment-author authorcomment &quot; + data:comment.authorClass' expr:id='data:comment.anchorName'>
+            <b:if cond='data:comment.favicon'>
+              <img expr:src='data:comment.favicon' height='16px' style='margin-bottom:-2px;' width='16px'/>
+            </b:if>
+            <a expr:name='data:comment.anchorName'/>
+            <b:if cond='data:blog.enabledCommentProfileImages'>
+              <data:comment.authorAvatarImage/>
+            </b:if>
+            <b:if cond='data:comment.authorUrl'>
+              <a expr:href='data:comment.authorUrl' rel='nofollow'><data:comment.author/></a>
+            <b:else/>
+              <data:comment.author/>
+            </b:if>
+            <span style='font-weight:normal;'><data:commentPostedByMsg/></span><br/>
+			<span class='comment-timestamp'>
+              <a expr:href='data:comment.url' title='comment permalink'>
+                <span style='font-weight:normal;'><data:comment.timestamp/></span>
+              </a>
+              <b:include data='comment' name='commentDeleteIcon'/>
+            </span>
+          </dt>
+		  
+          <dd class='comment-body authorcomment'>
+            <b:if cond='data:comment.isDeleted'>
+              <p class='deleted-comment'><data:comment.body/></p>
+            <b:else/>
+              <p><data:comment.body/></p>
+            </b:if>
+          </dd>
+		  
+		  </b:if>
+		  
+        </b:loop>
+      </dl>
+
+      <b:if cond='data:post.commentPagingRequired'>
+        <span class='paging-control-container'>
+          <a expr:class='data:post.oldLinkClass' expr:href='data:post.oldestLinkUrl'>
+            <data:post.oldestLinkText/>
+          </a>
+          <a expr:class='data:post.oldLinkClass' expr:href='data:post.olderLinkUrl'>
+            <data:post.olderLinkText/>
+          </a>
+          &#160;
+          <data:post.commentRangeText/>
+          &#160;
+          <a expr:class='data:post.newLinkClass' expr:href='data:post.newerLinkUrl'>
+            <data:post.newerLinkText/>
+          </a>
+          <a expr:class='data:post.newLinkClass' expr:href='data:post.newestLinkUrl'>
+            <data:post.newestLinkText/>
+          </a>
+        </span>
+      </b:if>
+
+	<b:if cond='data:post.embedCommentForm'>
+          <b:if cond='data:post.allowNewComments'>
+            <b:include data='post' name='comment-form'/>
+          <b:else/>
+            <div id='comment-form'><p class='nocomments'><data:post.noNewCommentsText/></p></div>
+          </b:if>
+        <b:else/>
+          <b:if cond='data:post.allowComments'>
+            <a expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'><data:postCommentMsg/></a>
+          </b:if>
+        </b:if>
+
+		
+		</b:if>
+		
+
+
+
+
+
+
+
+		<b:if cond='data:blog.pageType != &quot;static_page&quot;'><b:if cond='data:post.showBacklinks'>
+    <div id='backlinks-container'>
+    <div expr:id='data:widget.instanceId + &quot;_backlinks-container&quot;'>
+         <b:include data='post' name='backlinks'/>
+    </div>
+    </div>
+  </b:if></b:if>
+		
+		
+</div>
+</b:includable>
+    <b:includable id='feedLinks'>
+  <b:if cond='data:blog.pageType != &quot;item&quot;'> <!-- Blog feed links -->
+    <b:if cond='data:feedLinks'>
+      <div class='blog-feeds'>
+        <b:include data='feedLinks' name='feedLinksBody'/>
+      </div>
+    </b:if>
+
+  <b:else/> <!--Post feed links -->
+    <div class='post-feeds'>
+      <b:loop values='data:posts' var='post'>
+        <b:include cond='data:post.allowComments and data:post.feedLinks' data='post.feedLinks' name='feedLinksBody'/>
+      </b:loop>
+    </div>
+  </b:if>
+</b:includable>
+    <b:includable id='feedLinksBody' var='links'>
+  <div class='feed-links'>
+  <data:feedLinksMsg/>
+  <b:loop values='data:links' var='f'>
+     <a class='feed-link' expr:href='data:f.url' expr:type='data:f.mimeType' target='_blank'><data:f.name/> (<data:f.feedType/>)</a>
+  </b:loop>
+  </div>
+</b:includable>
+    <b:includable id='iframe_comments' var='post'>
+  <!-- G+ comments, no longer available. The includable is retained for backwards-compatibility. -->
+</b:includable>
+    <b:includable id='minipost' var='post'><b:if cond='data:blog.pageType != &quot;item&quot;'>
+<div class='minipost'><a expr:name='data:post.id'/><div class='entry'><data:post.body/></div><p class='meta'><b:if cond='data:top.showTimestamp'><b:if cond='data:post.url'><a class='timestamp-link' expr:href='data:post.url' rel='bookmark' title='permanent link'><abbr class='published' expr:title='data:post.timestampISO8601'><data:post.timestamp/></abbr></a></b:if></b:if><b:if cond='data:post.allowComments'> /<a expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick' expr:title='&quot;عدد التعليقات في &quot; + data:post.title'><b:if cond='data:post.numComments == 0'> أضف تعليق<b:else/><b:if cond='data:post.numComments == 1'> تعليق واحد<b:else/><b:if cond='data:post.numComments == 2'> تعليقان<b:else/><b><data:post.numComments/></b> تعليق</b:if></b:if></b:if>&#8230;</a><b:else/></b:if><b:include data='post' name='postQuickEdit'/></p></div>
+	
+<b:else/>
+<style media='screen' type='text/css'>#sidebar{display:none;}#content-area{margin:0 auto;float:none;}#header-wrapper #tophead #header{margin:0 auto;}</style>
+<div class='minipost'><a expr:name='data:post.id'/><b:if cond='data:post.title'><h1 class='post-title'><b:if cond='data:post.link'><a expr:href='data:post.link'><data:post.title/></a> <b:else/><b:if cond='data:post.url'><data:post.title/><b:else/><data:post.title/></b:if></b:if></h1></b:if><div class='entry'><data:post.body/></div><p class='meta'><b:if cond='data:top.showTimestamp'><b:if cond='data:post.url'><a class='timestamp-link' expr:href='data:post.url' rel='bookmark' title='permanent link'><abbr class='published' expr:title='data:post.timestampISO8601'><data:post.timestamp/></abbr></a></b:if></b:if><b:if cond='data:post.allowComments'> /<a expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick' expr:title='&quot;عدد التعليقات في &quot; + data:post.title'><b:if cond='data:post.numComments == 0'> أضف تعليق<b:else/><b:if cond='data:post.numComments == 1'> تعليق واحد<b:else/><b:if cond='data:post.numComments == 2'> تعليقان<b:else/><b><data:post.numComments/></b> تعليق</b:if></b:if></b:if>&#8230;</a><b:else/></b:if><b:include data='post' name='postQuickEdit'/></p></div>
+</b:if></b:includable>
+    <b:includable id='mobile-index-post' var='post'>
+  <div class='mobile-date-outer date-outer'>
+    <b:if cond='data:post.dateHeader'>
+      <div class='date-header'>
+        <span><data:post.dateHeader/></span>
+      </div>
+    </b:if>
+
+    <div class='mobile-post-outer'>
+      <a expr:href='data:post.url'>
+        <h3 class='mobile-index-title entry-title' itemprop='name'>
+          <data:post.title/>
+        </h3>
+
+        <div class='mobile-index-arrow'>&amp;rsaquo;</div>
+
+        <div class='mobile-index-contents'>
+          <b:if cond='data:post.thumbnailUrl'>
+            <div class='mobile-index-thumbnail'>
+              <div class='Image'>
+                <img expr:src='data:post.thumbnailUrl'/>
+              </div>
+            </div>
+          </b:if>
+
+          <div class='post-body'>
+            <b:if cond='data:post.snippet'><data:post.snippet/></b:if>
+          </div>
+        </div>
+
+        <div style='clear: both;'/>
+      </a>
+
+      <div class='mobile-index-comment'>
+        <b:include cond='data:blog.pageType != &quot;static_page&quot;                          and data:post.allowComments                          and data:post.numComments != 0' data='post' name='comment_count_picker'/>
+      </div>
+    </div>
+  </div>
+</b:includable>
+    <b:includable id='mobile-main' var='top'>
+    <!-- posts -->
+    <div class='blog-posts hfeed'>
+
+      <b:include data='top' name='status-message'/>
+
+      <b:if cond='data:blog.pageType == &quot;index&quot;'>
+        <b:loop values='data:posts' var='post'>
+          <b:include data='post' name='mobile-index-post'/>
+        </b:loop>
+      <b:else/>
+        <b:loop values='data:posts' var='post'>
+          <b:include data='post' name='mobile-post'/>
+        </b:loop>
+      </b:if>
+    </div>
+
+   <b:include name='mobile-nextprev'/>
+</b:includable>
+    <b:includable id='mobile-nextprev'>
+  <div class='blog-pager' id='blog-pager'>
+    <b:if cond='data:newerPageUrl'>
+      <div class='mobile-link-button' id='blog-pager-newer-link'>
+      <a class='blog-pager-newer-link' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-newer-link&quot;' expr:title='data:newerPageTitle'>&amp;lsaquo;</a>
+      </div>
+    </b:if>
+
+    <b:if cond='data:olderPageUrl'>
+      <div class='mobile-link-button' id='blog-pager-older-link'>
+      <a class='blog-pager-older-link' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-older-link&quot;' expr:title='data:olderPageTitle'>&amp;rsaquo;</a>
+      </div>
+    </b:if>
+
+    <div class='mobile-link-button' id='blog-pager-home-link'>
+    <a class='home-link' expr:href='data:blog.homepageUrl'><data:homeMsg/></a>
+    </div>
+
+    <div class='mobile-desktop-link'>
+      <a class='home-link' expr:href='data:desktopLinkUrl'><data:desktopLinkMsg/></a>
+    </div>
+
+  </div>
+  <div class='clear'/>
+</b:includable>
+    <b:includable id='mobile-post' var='post'>
+  <div class='date-outer'>
+    <b:if cond='data:post.dateHeader'>
+      <h2 class='date-header'><span><data:post.dateHeader/></span></h2>
+    </b:if>
+    <div class='date-posts'>
+      <div class='post-outer'>
+
+        <div class='post hentry uncustomized-post-template' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
+          <b:if cond='data:post.thumbnailUrl'>
+            <meta expr:content='data:post.thumbnailUrl' itemprop='image_url'/>
+          </b:if>
+          <meta expr:content='data:blog.blogId' itemprop='blogId'/>
+          <meta expr:content='data:post.id' itemprop='postId'/>
+
+          <a expr:name='data:post.id'/>
+          <b:if cond='data:post.title'>
+            <h3 class='post-title entry-title' itemprop='name'>
+              <b:if cond='data:post.link'>
+                <a expr:href='data:post.link'><data:post.title/></a>
+              <b:elseif cond='data:post.url and data:blog.url != data:post.url'/>
+                <a expr:href='data:post.url'><data:post.title/></a>
+              <b:else/>
+                <data:post.title/>
+              </b:if>
+            </h3>
+          </b:if>
+
+          <div class='post-header'>
+            <div class='post-header-line-1'/>
+          </div>
+
+          <div class='post-body entry-content' expr:id='&quot;post-body-&quot; + data:post.id' itemprop='articleBody'>
+            <data:post.body/>
+            <div style='clear: both;'/> <!-- clear for photos floats -->
+          </div>
+
+          <div class='post-footer'>
+            <div class='post-footer-line post-footer-line-1'>
+              <span class='post-author vcard'>
+                <b:if cond='data:top.showAuthor'>
+                  <b:if cond='data:post.authorProfileUrl'>
+                    <span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+                      <meta expr:content='data:post.authorProfileUrl' itemprop='url'/>
+                      <a expr:href='data:post.authorProfileUrl' rel='author' title='author profile'>
+                        <span itemprop='name'><data:post.author/></span>
+                      </a>
+                    </span>
+                  <b:else/>
+                    <span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+                      <span itemprop='name'><data:post.author/></span>
+                    </span>
+                  </b:if>
+                </b:if>
+              </span>
+
+              <span class='post-timestamp'>
+                <b:if cond='data:top.showTimestamp'>
+                  <data:top.timestampLabel/>
+                  <b:if cond='data:post.url'>
+                    <meta expr:content='data:post.url.canonical' itemprop='url'/>
+                    <a class='timestamp-link' expr:href='data:post.url' rel='bookmark' title='permanent link'><abbr class='published' expr:title='data:post.timestampISO8601' itemprop='datePublished'><data:post.timestamp/></abbr></a>
+                  </b:if>
+                </b:if>
+              </span>
+
+              <span class='post-comment-link'>
+                <b:include cond='data:blog.pageType not in {&quot;item&quot;,&quot;static_page&quot;}                                  and data:post.allowComments' data='post' name='comment_count_picker'/>
+              </span>
+            </div>
+
+            <div class='post-footer-line post-footer-line-2'>
+              <b:if cond='data:top.showMobileShare'>
+                <div class='mobile-link-button goog-inline-block' id='mobile-share-button'>
+                  <a href='javascript:void(0);'><data:shareMsg/></a>
+                </div>
+              </b:if>
+            </div>
+
+          </div>
+        </div>
+
+        <b:include cond='data:blog.pageType in {&quot;static_page&quot;,&quot;item&quot;}' data='post' name='comment_picker'/>
+      </div>
+    </div>
+  </div>
+</b:includable>
+    <b:includable id='nextprev'><b:if cond='data:olderPageUrl + data:newerPageUrl'>
+<div class='blog-pager' id='blog-pager'><b:if cond='data:olderPageUrl'><span id='blog-pager-older-link' style='float: left;'><a expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-older-link&quot;' expr:title='data:olderPageTitle'><data:olderPageTitle/> &#187; <span/></a></span></b:if><b:if cond='data:newerPageUrl'><span id='blog-pager-newer-link' style='float: right;'><a expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-newer-link&quot;' expr:title='data:newerPageTitle'>&#171; <data:newerPageTitle/> <span/></a></span></b:if></div>
+</b:if></b:includable>
+    <b:includable id='post' var='post'>
+<b:if cond='data:blog.pageType != &quot;static_page&quot;'>
+<b:if cond='data:blog.pageType != &quot;item&quot;'>
+
+<div class='index-post'><a expr:name='data:post.id'/>
+<b:if cond='data:post.title'><h2 class='post-title'><b:if cond='data:post.link'><a expr:href='data:post.link'><data:post.title/></a> <b:else/><b:if cond='data:post.url'><a expr:href='data:post.url'><data:post.title/></a><b:else/><data:post.title/></b:if></b:if></h2></b:if>
+	<div class='metapost'><b:if cond='data:post.allowComments'><span class='comments'>
+   <!--Intense Debate-->
+<b:if cond='data:post.numComments == 0'>
+     <div expr:id='&quot;IDCommentPostInfoTitle&quot;+data:post.id' style='display:none'><data:post.title/></div>
+<div expr:id='&quot;IDCommentPostInfoTime&quot;+data:post.id' style='display:none'><data:post.timestampISO8601/></div><div expr:id='&quot;IDCommentPostInfoAuthor&quot;+data:post.id' style='display:none'><data:post.author/></div><div expr:id='&quot;IDCommentPostInfoCats&quot;+data:post.id' style='display:none'><b:if cond='data:post.labels'><b:loop values='data:post.labels' var='label'><data:label.name/>|</b:loop></b:if></div> <a class='IDCommentsReplace' expr:href='data:post.url' expr:name='data:post.id'>التعليقات</a>
+   <b:else/>
+<!--/Intense Debate-->
+<a expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick' expr:title='&quot;عدد التعليقات في &quot; + data:post.title'><b:if cond='data:post.numComments == 0'> أضف تعليق<b:else/><b:if cond='data:post.numComments == 1'> تعليق واحد<b:else/><b:if cond='data:post.numComments == 2'> تعليقان<b:else/><b><data:post.numComments/></b> تعليق</b:if></b:if></b:if></a>
+ <!--Intense Debate-->
+</b:if>
+<!--/Intense Debate-->
+</span><b:else/><span class='comments'>التعليقات مغلقة</span></b:if><b:if cond='data:top.showTimestamp'><span class='timestamp'><b:if cond='data:post.url'><a class='timestamp-link' expr:href='data:post.url' rel='bookmark' title='permanent link'><abbr class='published' expr:title='data:post.timestampISO8601'><data:post.timestamp/></abbr></a></b:if></span></b:if><b:if cond='data:top.showAuthor'><span class='author vcard'>, <data:top.authorLabel/> <data:post.author/></span></b:if></div>
+	<div class='post-body-n3 entry-content'>
+	<data:post.body/><b:if cond='data:post.hasJumpLink'><p class='fullarticle'><a expr:href='data:post.url + &quot;#more&quot;'><data:post.jumpText/> &#187;</a></p></b:if>
+<div class='post-share-buttons'>
+   <b:include data='post' name='shareButtons'/>
+</div>
+	</div>
+</div>
+<b:else/> 
+
+<div id='single-post'><a expr:name='data:post.id'/>
+<b:if cond='data:post.title'><h1 class='post-title'><b:if cond='data:post.link'><a expr:href='data:post.link'><data:post.title/></a> <b:else/><b:if cond='data:post.url'><data:post.title/><b:else/><data:post.title/></b:if></b:if></h1></b:if>			
+	<div class='metapost'><b:if cond='data:post.allowComments'><span class='comments'><a class='add' expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick' expr:title='&quot;عدد التعليقات في &quot; + data:post.title'><b:if cond='data:post.numComments == 0'> أضف تعليق<b:else/><b:if cond='data:post.numComments == 1'> تعليق واحد<b:else/><b:if cond='data:post.numComments == 2'> تعليقان<b:else/><b><data:post.numComments/></b> تعليق</b:if></b:if></b:if></a></span><b:else/><span class='comments'>التعليقات مغلقة</span></b:if><b:if cond='data:top.showTimestamp'><span class='timestamp'><b:if cond='data:post.url'><a class='timestamp-link' expr:href='data:post.url' rel='bookmark' title='permanent link'><abbr class='published' expr:title='data:post.timestampISO8601'><data:post.timestamp/></abbr></a></b:if></span></b:if><b:if cond='data:top.showAuthor'><span class='author vcard'>, <data:top.authorLabel/> <data:post.author/></span></b:if></div>	
+	<div class='post-body-n3 entry-content'><data:post.body/><p class='editpost'>
+<div class='post-share-buttons'>
+   <b:include data='post' name='shareButtons'/>
+</div>
+<b:include data='post' name='postQuickEdit'/></p></div>
+
+</div>
+
+</b:if>
+
+
+
+<b:else/>
+
+<style media='screen' type='text/css'>#sidebar { display:none; }#content-area { width: 770px; float: right; margin:0 auto; }#static-page { width:770px; margin:0 auto; padding-right: 20px; }#comments { width: 770px; margin:0 auto; padding-right: 20px; }#comment-editor { width:770px; margin:0 auto; padding-right: 20px;}</style>
+<div id='static-page'><a expr:name='data:post.id'/>
+	<b:if cond='data:post.title'><h1 class='post-title'><b:if cond='data:post.link'><a expr:href='data:post.link'><data:post.title/></a> <b:else/><b:if cond='data:post.url'><data:post.title/><b:else/><data:post.title/></b:if></b:if></h1></b:if>			
+	<div class='metapost'><b:if cond='data:post.allowComments'><span class='comments'><a class='add' expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick' expr:title='&quot;عدد التعليقات في &quot; + data:post.title'><b:if cond='data:post.numComments == 0'> أضف تعليق<b:else/><b:if cond='data:post.numComments == 1'> تعليق واحد<b:else/><b:if cond='data:post.numComments == 2'> تعليقان<b:else/><b><data:post.numComments/></b> تعليق</b:if></b:if></b:if></a></span><b:else/><span class='comments'>التعليقات مغلقة</span></b:if><b:if cond='data:top.showTimestamp'><span class='timestamp'><b:if cond='data:post.url'><a class='timestamp-link' expr:href='data:post.url' rel='bookmark' title='permanent link'><abbr class='published' expr:title='data:post.timestampISO8601'><data:post.timestamp/></abbr></a></b:if></span></b:if><b:if cond='data:top.showAuthor'><span class='author vcard'>, <data:top.authorLabel/> <data:post.author/></span></b:if></div>
+	<div class='post-body-n3 entry-content'>
+	<data:post.body/><p class='editpost'><b:include data='post' name='postQuickEdit'/></p>
+	</div>
+</div>
+
+</b:if>
+</b:includable>
+    <b:includable id='postQuickEdit' var='post'><b:if cond='data:post.editUrl'><span expr:class='&quot;item-control &quot; + data:post.adminClass'><a expr:href='data:post.editUrl' expr:title='data:top.editPostMsg'><data:top.editPostMsg/>&#8230;</a></span></b:if></b:includable>
+    <b:includable id='shareButtons' var='post'>
+  <b:if cond='data:post.sharePostUrl'>
+<tr><td><b>
+
+<b:if cond='data:post.labels'><div class='labels-post'><b:loop values='data:post.labels' var='label'><b:if cond='data:label.isLast != &quot;true&quot;'><a expr:href='data:label.url + &quot;?max-results=5&quot;' expr:title='&quot;شاهد جميع التدوينات تحت تصنيف &quot; + data:label.name' rel='tag'><data:label.name/><span/></a><span class='comma'>, </span><b:else/><a class='last' expr:href='data:label.url + &quot;?max-results=5&quot;' expr:title='&quot;شاهد جميع التدوينات تحت تصنيف &quot; + data:label.name' rel='tag'><data:label.name/><span/></a></b:if></b:loop></div></b:if>
+
+</b></td><td>
+</td></tr>
+  </b:if>
+
+</b:includable>
+    <b:includable id='status-archive'>
+	<b:if cond='data:blog.pageType == &quot;archive&quot;'><div class='status-msg'><p>تشاهد الأن جميع تدوينات شهر <strong><data:blog.pageName/>.</strong> <a href='/'>إظهار كافة الرسائل</a></p></div></b:if>
+</b:includable>
+    <b:includable id='status-message'>
+	<b:if cond='data:navMessage'><div class='status-msg'><p/></div></b:if>
+</b:includable>
+    <b:includable id='threaded-comment-form' var='post'>
+  <div class='comment-form'>
+    <a name='comment-form'/>
+    <b:if cond='data:mobile'>
+      <p><data:blogCommentMessage/></p>
+      <data:blogTeamBlogMessage/>
+      <a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/>
+      <iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' expr:height='data:cmtIframeInitialHeight' frameborder='0' id='comment-editor' name='comment-editor' src='' style='display: none' width='100%'/>
+    <b:else/>
+      <p><data:blogCommentMessage/></p>
+      <data:blogTeamBlogMessage/>
+      <a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/>
+      <iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' expr:height='data:cmtIframeInitialHeight' frameborder='0' id='comment-editor' name='comment-editor' src='' width='100%'/>
+    </b:if>
+    <data:post.cmtfpIframe/>
+    <script type='text/javascript'>
+      BLOG_CMT_createIframe(&#39;<data:post.appRpcRelayPath/>&#39;);
+    </script>
+  </div>
+</b:includable>
+    <b:includable id='threaded_comment_js' var='post'>
+  <script async='async' expr:src='data:post.commentSrc' type='text/javascript'/>
+
+  <script type='text/javascript'>
+    (function() {
+      var items = <data:post.commentJso/>;
+      var msgs = <data:post.commentMsgs/>;
+      var config = <data:post.commentConfig/>;
+
+// <![CDATA[
+      var cursor = null;
+      if (items && items.length > 0) {
+        cursor = parseInt(items[items.length - 1].timestamp) + 1;
+      }
+
+      var bodyFromEntry = function(entry) {
+        var text = (entry &&
+                    ((entry.content && entry.content.$t) ||
+                     (entry.summary && entry.summary.$t))) ||
+            '';
+        if (entry && entry.gd$extendedProperty) {
+          for (var k in entry.gd$extendedProperty) {
+            if (entry.gd$extendedProperty[k].name == 'blogger.contentRemoved') {
+              return '<span class="deleted-comment">' + text + '</span>';
+            }
+          }
+        }
+        return text;
+      }
+
+      var parse = function(data) {
+        cursor = null;
+        var comments = [];
+        if (data && data.feed && data.feed.entry) {
+          for (var i = 0, entry; entry = data.feed.entry[i]; i++) {
+            var comment = {};
+            // comment ID, parsed out of the original id format
+            var id = /blog-(\d+).post-(\d+)/.exec(entry.id.$t);
+            comment.id = id ? id[2] : null;
+            comment.body = bodyFromEntry(entry);
+            comment.timestamp = Date.parse(entry.published.$t) + '';
+            if (entry.author && entry.author.constructor === Array) {
+              var auth = entry.author[0];
+              if (auth) {
+                comment.author = {
+                  name: (auth.name ? auth.name.$t : undefined),
+                  profileUrl: (auth.uri ? auth.uri.$t : undefined),
+                  avatarUrl: (auth.gd$image ? auth.gd$image.src : undefined)
+                };
+              }
+            }
+            if (entry.link) {
+              if (entry.link[2]) {
+                comment.link = comment.permalink = entry.link[2].href;
+              }
+              if (entry.link[3]) {
+                var pid = /.*comments\/default\/(\d+)\?.*/.exec(entry.link[3].href);
+                if (pid && pid[1]) {
+                  comment.parentId = pid[1];
+                }
+              }
+            }
+            comment.deleteclass = 'item-control blog-admin';
+            if (entry.gd$extendedProperty) {
+              for (var k in entry.gd$extendedProperty) {
+                if (entry.gd$extendedProperty[k].name == 'blogger.itemClass') {
+                  comment.deleteclass += ' ' + entry.gd$extendedProperty[k].value;
+                } else if (entry.gd$extendedProperty[k].name == 'blogger.displayTime') {
+                  comment.displayTime = entry.gd$extendedProperty[k].value;
+                }
+              }
+            }
+            comments.push(comment);
+          }
+        }
+        return comments;
+      };
+
+      var paginator = function(callback) {
+        if (hasMore()) {
+          var url = config.feed + '?alt=json&v=2&orderby=published&reverse=false&max-results=50';
+          if (cursor) {
+            url += '&published-min=' + new Date(cursor).toISOString();
+          }
+          window.bloggercomments = function(data) {
+            var parsed = parse(data);
+            cursor = parsed.length < 50 ? null
+                : parseInt(parsed[parsed.length - 1].timestamp) + 1
+            callback(parsed);
+            window.bloggercomments = null;
+          }
+          url += '&callback=bloggercomments';
+          var script = document.createElement('script');
+          script.type = 'text/javascript';
+          script.src = url;
+          document.getElementsByTagName('head')[0].appendChild(script);
+        }
+      };
+      var hasMore = function() {
+        return !!cursor;
+      };
+      var getMeta = function(key, comment) {
+        if ('iswriter' == key) {
+          var matches = !!comment.author
+              && comment.author.name == config.authorName
+              && comment.author.profileUrl == config.authorUrl;
+          return matches ? 'true' : '';
+        } else if ('deletelink' == key) {
+          return config.baseUri + '/delete-comment.g?blogID='
+               + config.blogId + '&postID=' + comment.id;
+        } else if ('deleteclass' == key) {
+          return comment.deleteclass;
+        }
+        return '';
+      };
+
+      var replybox = null;
+      var replyUrlParts = null;
+      var replyParent = undefined;
+
+      var onReply = function(commentId, domId) {
+        if (replybox == null) {
+          // lazily cache replybox, and adjust to suit this style:
+          replybox = document.getElementById('comment-editor');
+          if (replybox != null) {
+            replybox.height = '250px';
+            replybox.style.display = 'block';
+            replyUrlParts = replybox.src.split('#');
+          }
+        }
+        if (replybox && (commentId !== replyParent)) {
+          replybox.src = '';
+          document.getElementById(domId).insertBefore(replybox, null);
+          replybox.src = replyUrlParts[0]
+              + (commentId ? '&parentID=' + commentId : '')
+              + '#' + replyUrlParts[1];
+          replyParent = commentId;
+        }
+      };
+
+      var hash = (window.location.hash || '#').substring(1);
+      var startThread, targetComment;
+      if (/^comment-form_/.test(hash)) {
+        startThread = hash.substring('comment-form_'.length);
+      } else if (/^c[0-9]+$/.test(hash)) {
+        targetComment = hash.substring(1);
+      }
+
+      // Configure commenting API:
+      var configJso = {
+        'maxDepth': config.maxThreadDepth
+      };
+      var provider = {
+        'id': config.postId,
+        'data': items,
+        'loadNext': paginator,
+        'hasMore': hasMore,
+        'getMeta': getMeta,
+        'onReply': onReply,
+        'rendered': true,
+        'initComment': targetComment,
+        'initReplyThread': startThread,
+        'config': configJso,
+        'messages': msgs
+      };
+
+      var render = function() {
+        if (window.goog && window.goog.comments) {
+          var holder = document.getElementById('comment-holder');
+          window.goog.comments.render(holder, provider);
+        }
+      };
+
+      // render now, or queue to render when library loads:
+      if (window.goog && window.goog.comments) {
+        render();
+      } else {
+        window.goog = window.goog || {};
+        window.goog.comments = window.goog.comments || {};
+        window.goog.comments.loadQueue = window.goog.comments.loadQueue || [];
+        window.goog.comments.loadQueue.push(render);
+      }
+    })();
+// ]]>
+  </script>
+</b:includable>
+    <b:includable id='threaded_comments' var='post'>
+  <div class='comments' id='comments'>
+    <a name='comments'/>
+    <h4><data:post.commentLabelFull/>:</h4>
+
+    <div class='comments-content'>
+      <b:include cond='data:post.embedCommentForm' data='post' name='threaded_comment_js'/>
+      <div id='comment-holder'>
+         <data:post.commentHtml/>
+      </div>
+    </div>
+
+    <p class='comment-footer'>
+      <b:if cond='data:post.allowNewComments'>
+        <b:include data='post' name='threaded-comment-form'/>
+      <b:else/>
+        <data:post.noNewCommentsText/>
+      </b:if>
+    </p>
+
+    <b:if cond='data:showCmtPopup'>
+      <div id='comment-popup'>
+        <iframe allowtransparency='true' frameborder='0' id='comment-actions' name='comment-actions' scrolling='no'>
+        </iframe>
+      </div>
+    </b:if>
+
+    <div id='backlinks-container'>
+    <div expr:id='data:widget.instanceId + &quot;_backlinks-container&quot;'>
+    </div>
+    </div>
+  </div>
+</b:includable>
+  </b:widget>
+</b:section>
+
+
+	<b:if cond='data:blog.pageType != &quot;static_page&quot;'>
+
+	<!-- New widgets container Start -->
+	<b:section class='main' id='content-area2' showaddelement='yes'>
+<b:widget id='Text7' locked='false' title='قيل عن الإصدار الأول' type='Text'>
+  <b:widget-settings>
+    <b:widget-setting name='content'><![CDATA[<div dir="rtl" style="text-align: justify; font-size: 16px; font-family: Arial, KacstOne; line-height:1.5;" trbidi="on"><br/><img src="https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/quotes/right_quote.png" alt='"' /> الكتاب في مئة صفحة ولكن كل صفحة بالفعل ممتلئة بالمعلومات القيمة. وتنسيق الأفكار ووضعها في أسلوب سهل شجعني على قراءة الكتاب ... <img src="https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/quotes/left_quote.png" alt='"' /><br/><p style="text-align: left; font-weight: bold;">-- الأستاذ فهد السعيدي مؤسس الموقع الشهير وادي التقنية.</p><br/><img src="https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/quotes/right_quote.png" alt='"' /> قرأت الكتاب ووجدته غنـي بالمعلومات والتفاصيل. أسلوب سلس وممتع. أعجبـني وسـأنصح كل من أراد تجربة جنو/لينوكس بقـراءته ... <img src="https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/quotes/left_quote.png" alt='"' /><br/><p style="text-align: left; font-weight: bold;">-- الأستاذ محمد البردعي صاحب المدونة العربية للبرمجيات الحرة.</p><br/><img src="https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/quotes/right_quote.png" alt='"' /> الف شكر لك والكتاب قرأته من قبل ومثل ما تفضلت من اروع الكتب ... <img src="https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/quotes/left_quote.png" alt='"' /><br/><p style="text-align: left; font-weight: bold;">-- الأستاذ نايف الجولان من إدارة منتديات أوبنتو العربي.</p><br/><img src="https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/quotes/right_quote.png" alt='"' /> هذا أفضل كتاب عربي قرأته. <img src="https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/quotes/left_quote.png" alt='"' /><br/><p style="text-align: left; font-weight: bold;">-- الأستاذ عمرو رجائي أحد قرّاء الكتاب.</p><p style="text-align: left; font-weight: bold;"><br/></p></div>]]></b:widget-setting>
+  </b:widget-settings>
+  <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+</b:widget>
+<b:widget id='Text8' locked='false' title='مراجعات الكتاب' type='Text'>
+  <b:widget-settings>
+    <b:widget-setting name='content'><![CDATA[<div dir="rtl" style="font-family: Arial, KacstOne; font-size: 16px; line-height: 1.5em; text-align: justify;" trbidi="on"><br />جريدة الرياض السعودية - <a href="http://www.alriyadh.com/2011/07/26/article653922.html" target="_blank">الشباب العربي يزينون المكتبة العربية بكتب عن المصادر المفتوحة</a>.<br />وادي التقنية - <a href="http://itwadi.com/node/1854" target="_blank">إطلاق كتاب "أوبنتو ببساطة"</a>.<br />لينكساوي - <a href="http://linuxawi.com/simplyubuntu-ebook/" target="_blank">كتاب أبونتو ببساطة</a>.<br />يومياتي - <a href="http://youmiati.blogspot.com/2011/07/blog-post.html" target="_blank">أوبنتو ببساطة</a>.<br />المدونة العربية للبرمجيات الحرة - <a href="http://arabicfoss.blogspot.com/2011/07/blog-post.html" target="_blank">كتاب أوبنتو ببساطة متوفر الآن</a>.<br />عالم التقنية - <a href="http://www.tech-wd.com/wd/2011/07/16/simplyubuntu/" target="_blank">أوبنتو ببساطة: كتاب لتعلم نظام أوبنتو</a>.<br />المجلة التقنية - <a href="http://www.it-scoop.com/2011/07/simply-ubuntu/" target="_blank">كتاب “أوبنتو ببساطة” متوفر الآن للتحميل المجاني</a>.<br />التقنية بلا حدود - <a href="http://www.unlimit-tech.com/blog/?p=50802" target="_blank">إطلاق كتاب “أوبنتو ببساطة” !!</a>.<br />أوبنتو سنتر - <a href="http://ubuntu-c.blogspot.com/2011/07/blog-post_16.html" target="_blank">صدور كتاب "أوبنتو ببساطة" حيث متعة تعلم أوبنتو</a>.<br />كشكول التقنية - <a href="http://www.tech-k.com/2011/07/15/%D8%A5%D8%B7%D9%84%D8%A7%D9%82-%D9%83%D8%AA%D8%A7%D8%A8-%D8%A3%D9%88%D8%A8%D9%86%D8%AA%D9%88-%D8%A8%D8%A8%D8%B3%D8%A7%D8%B7%D8%A9-%D9%84%D9%84%D8%AA%D8%B9%D8%B1%D9%8A%D9%81-%D8%A8%D9%86%D8%B8/" target="_blank">إطلاق كتاب “أوبنتو ببساطة” للتعريف بنظام لينكس </a>.<br />الطالب - <a href="http://www.italib.net/2011/07/simply-ubuntu.html" target="_blank">إصدار كتاب "أوبنتو ببساطة"</a>.<br />بوابي - <a href="http://www.bwabe.info/?p=6214" target="_blank">اطلاق كتاب اوبنتو ببساطة</a>.<br />بالعربي - <a href="http://www.google4ar.net/ubuntu-os-book-in-arabic/" target="_blank">كتاب شرح نظام أوبنتو لينوكس بالعربي</a>.<br /><br />- <a href="http://www.simplyubuntu.com/p/reviews.html" target="_blank">المزيد ... </a></div>]]></b:widget-setting>
+  </b:widget-settings>
+  <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+</b:widget>
+<b:widget id='Text9' locked='false' title='' type='Text'>
+  <b:widget-settings>
+    <b:widget-setting name='content'><![CDATA[<div id="made-by"><br /><h2 class="title" style="padding-bottom: 8px;">بكل الفخر</h2><br /></div>]]></b:widget-setting>
+  </b:widget-settings>
+  <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+</b:widget>
+<b:widget id='Text6' locked='false' title='' type='Text'>
+  <b:widget-settings>
+    <b:widget-setting name='content'><![CDATA[<p style="text-align:center"><img src="https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/made_by_foss.png" alt="هذا الكتاب صنع باستخدام البرمجيات الحرة مفتوحة المصدر" /></p>]]></b:widget-setting>
+  </b:widget-settings>
+  <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+</b:widget>
+</b:section>
+	<!-- New widgets container End -->
+
+	</b:if>
+
+
+<b:section class='sidebar' id='sidebar' preferred='yes'>
+  <b:widget id='Text2' locked='false' title='تابع الكتاب على' type='Text'>
+    <b:widget-settings>
+      <b:widget-setting name='content'><![CDATA[<p style="text-align:center"><a href="http://www.goodreads.com/book/show/12011960" target="_blank"><img src="https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/sharebox/goodreads_share.png" alt="جود ريدز" /></a>&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/simplyubuntu" target="_blank"><img src="https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/sharebox/facebook_share.png" alt="فيسبوك" /></a>&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/AhmedAbouZaid" target="_blank"><img src="https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/sharebox/twitter_share.png" alt="تويتر" /></a><br/><br/><iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2F%25D8%25A7%25D9%2584%25D8%25B5%25D9%2581%25D8%25AD%25D8%25A9-%25D8%25A7%25D9%2584%25D8%25B1%25D8%25B3%25D9%2585%25D9%258A%25D8%25A9-%25D9%2584%25D9%2583%25D8%25AA%25D8%25A7%25D8%25A8-%25D8%25A3%25D9%2588%25D8%25A8%25D9%2586%25D8%25AA%25D9%2588-%25D8%25A8%25D8%25A8%25D8%25B3%25D8%25A7%25D8%25B7%25D8%25A9%2F220891254616354&amp;width=238&amp;colorscheme=light&amp;show_faces=true&amp;border_color=cccccc&amp;stream=false&amp;header=false&amp;height=310" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:238px; height:310px;" allowtransparency="true"></iframe><br/></p>]]></b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+  </b:widget>
+  <b:widget id='Text5' locked='false' title='ساهم بنشر الكتاب على الانترنت' type='Text'>
+    <b:widget-settings>
+      <b:widget-setting name='content'><![CDATA[<p style="text-align:center"><a href="http://www.simplyubuntu.com/p/share.html"><img style="width: 192px; height: 119px;" src="http://files.simplyubuntu.com/share/simplyubuntu_badge_200x125.png" alt="حمل كتاب أوبنتو ببساطة الآن!" /></a></p><br/><p style="text-align:justify">إذا أعجبك الكتاب ساهم بنشره بين أكبر قدر من الناس بوضع ملصق الكتاب في موقعك أو مدونتك أو المنتدى الذي تشارك به ... <a href="http://www.simplyubuntu.com/p/share.html">مزيد من الأحجام و الأشكال</a>.</p><p></p>]]></b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+  </b:widget>
+  <b:widget id='Text4' locked='false' title='أحصل على آخر إصدارات أوبنتو' type='Text'>
+    <b:widget-settings>
+      <b:widget-setting name='content'><![CDATA[<p style="text-align:center"><a href="http://www.ubuntu.com/" target="_blank"><img src="http://www.ubuntu.com/countdown/banner1.png" alt="أحصل على أوبنتو" border="0" height="150" width="180" /></a></p>]]></b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+  </b:widget>
+  <b:widget id='Navbar1' locked='true' title='Navbar' type='Navbar'>
+    <b:includable id='main'>&lt;script type=&quot;text/javascript&quot;&gt;
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener(&#39;load&#39;,
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent(&#39;onload&#39;, function(){ object[attribute] = val; });
+      }
+    }
+  &lt;/script&gt;
+&lt;div id=&quot;navbar-iframe-container&quot;&gt;&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://apis.google.com/js/platform.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+      gapi.load(&quot;gapi.iframes:gapi.iframes.style.bubble&quot;, function() {
+        if (gapi.iframes &amp;&amp; gapi.iframes.getContext) {
+          gapi.iframes.getContext().openChild({
+              url: &#39;https://www.blogger.com/navbar.g?targetBlogID\x3d6588804985639299430\x26blogName\x3d%D9%83%D8%AA%D8%A7%D8%A8+%D8%A3%D9%88%D8%A8%D9%86%D8%AA%D9%88+%D8%A8%D8%A8%D8%B3%D8%A7%D8%B7%D8%A9+-+%D8%A7%D8%A8%D8%AF%D8%A3+%D9%85%D8%B9+%D9%86%D8%B8%D8%A7%D9%85+%D8%A3%D9%88%D8%A8...\x26publishMode\x3dPUBLISH_MODE_HOSTED\x26navbarType\x3dBLUE\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttps://www.simplyubuntu.com/search\x26blogLocale\x3dar\x26v\x3d2\x26homepageUrl\x3dhttps://www.simplyubuntu.com/\x26vt\x3d1317742147719458904&#39;,
+              where: document.getElementById(&quot;navbar-iframe-container&quot;),
+              id: &quot;navbar-iframe&quot;
+          });
+        }
+      });
+    &lt;/script&gt;&lt;script type=&quot;text/javascript&quot;&gt;
+(function() {
+var script = document.createElement(&#39;script&#39;);
+script.type = &#39;text/javascript&#39;;
+script.src = &#39;//pagead2.googlesyndication.com/pagead/js/google_top_exp.js&#39;;
+var head = document.getElementsByTagName(&#39;head&#39;)[0];
+if (head) {
+head.appendChild(script);
+}})();
+&lt;/script&gt;
+</b:includable>
+  </b:widget>
+</b:section>
+
+</div></div>
+
+	<b:section class='main' id='content-area3' showaddelement='yes'>
+<b:widget id='Text3' locked='false' title='' type='Text'>
+  <b:widget-settings>
+    <b:widget-setting name='content'><![CDATA[<br/><br/><br/><h2 class="title" id="sponsors" style="padding-bottom:12px; text-align:centr;">تعرف على رعاة الكتاب</h2><p style="text-align:center"><a href="http://ajb.ms/latest" target="_blank"><img style="width: 210px; height: 50px;" src="https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/sponsors/ajbni.png" alt="أعجبني" /></a><img src="https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/separator.png" alt="" /><a href="http://itwadi.com/" target="_blank"><img style="width: 204px; height: 50px;" src="https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/sponsors/itwadi.png" alt="وادي التقنية" /></a><img src="https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/separator.png" alt="" /><a href="http://www.visionhosts.com/" target="_blank"><img style="width: 144px; height: 60px;" src="https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/sponsors/visionhosts.png" alt="فيجن للاستضافة" /></a><img src="https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/separator.png" alt="" /><a href="http://www.linuxac.org/forum/forum.php" target="_blank"><img style="width: 217px; height: 50px;" src="https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/sponsors/linuxac.png" alt="مجتمع لينُكس العربي" /></a><a href="http://www.horizontechs.com/" target="_blank"><img style="width: 135px; height: 75px;" src="https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/sponsors/horizontechs_logo.png" alt="هوريزون تكس" /></a><img src="https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/separator.png" alt="" /><a href="http://www.homslinux.com/" target="_blank"><img style="width: 168px; height: 60px;" src="https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/sponsors/homs.png" alt="حمص ليُنكس" /></a><img src="https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/separator.png" alt="" /><a href="http://khamsat.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/sponsors/khamsat.png" alt="خمسات" /></a><img src="https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/separator.png" alt="" /><a href="http://www.ubuntu-eg.org/" target="_blank"><img style="width: 200px; height: 55px;" src="https://cdn.jsdelivr.net/gh/aabouzaid/simplyubuntu.com@latest/static/img/sponsors/ubuntueg.png" alt="أوبنتو مصر" /></a><br/><br/></p>]]></b:widget-setting>
+  </b:widget-settings>
+  <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+</b:widget>
+</b:section>
+
+<div id='footer-wrapper'><div id='footer'><b:section id='copyright' showaddelement='yes'/>
+<p id='by'>
+<div dir='rtl' style='text-align: right;' trbidi='on'>
+<div style='text-align: center;'>
+القالب : The Simple!&#8206;  | تصميم : <a href='http://almsn3.blogspot.com/'>المصنع</a> |  تعديل : <a href='http://www.aabouzaid.com/'>أحمد أبوزيد !</a>
+
+<p style='text-align:center'><!-- Begin W3Counter Tracking Code -->
+<script src='http://www.w3counter.com/tracker.js' type='text/javascript'/>
+<script type='text/javascript'>
+w3counter(54495);
+</script>
+<noscript>
+<div><a href='http://www.w3counter.com'><img alt='W3Counter' src='http://www.w3counter.com/tracker.php?id=54495' style='border: 0'/></a></div>
+</noscript>
+<!-- End W3Counter Tracking Code--></p>
+</div>
+
+
+</div>
+</p>
+</div></div>
+
+
+</body></html>
